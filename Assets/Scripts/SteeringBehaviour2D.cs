@@ -41,6 +41,7 @@ public class SteeringBehaviour : MonoBehaviour {
 
     [Header("Flocking Behaviour")]
     public List<SteeringBehaviour> AgentFlockList;
+    public float SeperationDistance;
 
     void Update() {
         if (SeekForceWeight != 0) ApplyForce(SeekForce(SeekTargetPosition.x, SeekTargetPosition.y), SeekForceWeight);
@@ -174,8 +175,8 @@ public class SteeringBehaviour : MonoBehaviour {
         foreach (SteeringBehaviour agent in AgentFlockList) {
             if (agent == this) continue;
             vectorTo = Position - agent.Position;
-            float dist = Mathf.Min(vectorTo.magnitude, 10);
-            float scale = 1 - (dist / 10);
+            float dist = Mathf.Min(vectorTo.magnitude, SeperationDistance);
+            float scale = 1 - (dist / SeperationDistance);
             vectorTo *= scale;
             vector += vectorTo;
             count ++;
