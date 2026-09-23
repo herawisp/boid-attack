@@ -18,10 +18,10 @@ public class SteeringBehaviour : MonoBehaviour {
     public float PursueForceWeight;
     public float EvadeForceWeight;
     public float ArriveForceWeight;
-    public float WanderForceWeight;
+    public float WanderForceWeight = 1f;
     public float AlignForceWeight;
     public float CohesionForceWeight;
-    public float SeperationForceWeight;
+    public float SeperationForceWeight = 1f;
 
     [Header("Seek & Flee Behaviour")]
     public Vector2 SeekTargetPosition;

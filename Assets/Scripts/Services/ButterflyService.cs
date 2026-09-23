@@ -93,6 +93,11 @@ public class ButterflyService: MonoBehaviour {
 
         Animator animator = butterfly.GetComponent<Animator>();
         animator.runtimeAnimatorController = butterflyData.AnimatorController;
+
+        if (teamType == TeamType.Enemy) {
+            SpriteRenderer spriteRenderer = butterfly.GetComponent<SpriteRenderer>();
+            spriteRenderer.color = new(1, 0.5f, 0.5f);
+        }
         return butterfly;
     }
 

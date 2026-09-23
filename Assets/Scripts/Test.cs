@@ -7,7 +7,11 @@ public class Test : MonoBehaviour {
     void Start()
     {
         serviceManager.ButterflyService.AddButterfly(ButterflyType.AdonisBlue, TeamType.Player);
+        serviceManager.ButterflyService.AddButterfly(ButterflyType.AdonisBlue, TeamType.Player);
+        serviceManager.ButterflyService.AddButterfly(ButterflyType.AdonisBlue, TeamType.Player);
+        serviceManager.ButterflyService.AddButterfly(ButterflyType.AdonisBlue, TeamType.Enemy);
+        serviceManager.ButterflyService.AddButterfly(ButterflyType.AdonisBlue, TeamType.Enemy);
+        serviceManager.ButterflyService.AddButterfly(ButterflyType.AdonisBlue, TeamType.Enemy);
         serviceManager.ButterflyService.EnableAllButterfly();
-        // serviceManager.TeamService.AddMember(ButterflyType.AdonisBlue, TeamType.Enemy);
     }
 }

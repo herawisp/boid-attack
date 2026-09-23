@@ -1,13 +1,13 @@
 using UnityEngine;
 
 
-public class Butterfly : MonoBehaviour {
+public class Butterfly : MonoBehaviour { 
 
     //================================================================================================//
     //================================================================================================//
 
     public ServiceManager ServiceManager;
-    public TeamType TeamType = TeamType.Player;
+    public TeamType TeamType;
 
     Movement _movement;
 
@@ -17,12 +17,12 @@ public class Butterfly : MonoBehaviour {
     void Awake() {
         _movement = gameObject.AddComponent<Movement>();
         _movement.ButterflyTransform = transform;
-        _movement.TeamType = TeamType;
         _movement.Paused = true;
     }
 
     public void Enable() {
         _movement.UpdateFlockingAgents(ServiceManager.ButterflyService.SteeringBehaviours);
+        _movement.TeamType = TeamType;
         _movement.Paused = false;
     }
 

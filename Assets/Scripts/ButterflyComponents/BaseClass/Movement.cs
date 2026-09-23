@@ -59,11 +59,12 @@ public class Movement : MonoBehaviour {
         } else {
             (Vector3 borderPosition, float distance) = ScreenUtils.GetClosestDistanceToBorder(ButterflyTransform.position);
             if (distance <= 3) {
-                Debug.Log("FLEEING");
+                _steeringBehaviour.WanderForceWeight = 0f;
                 _steeringBehaviour.SeekForceWeight = 0f;
                 _steeringBehaviour.FleeForceWeight = 1f;
                 _steeringBehaviour.FleeTargetPosition = borderPosition;
             } else {
+                _steeringBehaviour.WanderForceWeight = 1f;
                 _steeringBehaviour.SeekForceWeight = 1f;
                 _steeringBehaviour.FleeForceWeight = 0;
             }
