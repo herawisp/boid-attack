@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7793617452120080051}
   - component: {fileID: 6325481013748654873}
-  - component: {fileID: 8511517031965561011}
-  - component: {fileID: 1647900046287684149}
   - component: {fileID: 8471795132123554240}
+  - component: {fileID: -3371507109695851518}
   m_Layer: 0
-  m_Name: Butterfly
+  m_Name: Adonis Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,56 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &8511517031965561011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc58a134f14515d46b114512a79d75e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Boid
---- !u!114 &1647900046287684149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30b61a027a153924090d36126cddc375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SteeringBehaviour
-  Position: {x: 0, y: 0}
-  Velocity: {x: 0, y: 0}
-  SteeringForce: {x: 0, y: 0}
-  MaxSpeed: 0.007
-  MaxForce: 0.00005
-  SeekForceWeight: 1
-  FleeForceWeight: 0
-  PursueForceWeight: 0
-  EvadeForceWeight: 0
-  ArriveForceWeight: 0
-  WanderForceWeight: 1
-  AlignForceWeight: 0
-  CohesionForceWeight: 0
-  SeperationForceWeight: 0
-  SeekTargetPosition: {x: 0, y: 0}
-  FleeTargetPosition: {x: 0, y: 0}
-  PursuedAgent: {fileID: 0}
-  EvadeAgent: {fileID: 0}
-  ArriveTargetPosition: {x: 0, y: 0}
-  ArriveSlowingRadius: 0
-  WanderDistance: 10
-  WanderPower: 5
-  WanderAngle: 0
-  WanderChange: 20
-  AgentFlockList: []
-  SeperationDistance: 2
 --- !u!95 &8471795132123554240
 Animator:
   serializedVersion: 7
@@ -166,3 +115,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-3371507109695851518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6528289391319697360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc58a134f14515d46b114512a79d75e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Butterfly
+  ServiceManager: {fileID: 0}
+  TeamType: 0

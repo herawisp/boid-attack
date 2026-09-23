@@ -1,5 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
+public enum TeamType {Player, Enemy}
 
 public enum ButterflyType {
     AdonisBlue, BlackHairstreak, Brimstone, BrownArgus,
@@ -13,66 +16,84 @@ public class ButterflyService: MonoBehaviour {
     //================================================================================================//
     //================================================================================================//
 
-    public Dictionary<TeamType, List<ButterflyType>> ButterflyTeams {get; private set;}
-    public Dictionary<TeamType, List<GameObject>> ButterflyObjects {get; private set;}
+    [Header("Butterfly Datas")]
+    public ServiceManager ServiceManager;
     public List<ButterflyData> ButterflyDatas;
-    public GameObject ButterflyPrefab;
+    public List<SteeringBehaviour> SteeringBehaviours;
+    public Dictionary<TeamType, List<Butterfly>> TeamsButterflies;
+
+    [Header("Unity Events")]
+    public UnityEvent ButterflyAdded;
+    public UnityEvent ButterflyRemoved;
 
     //================================================================================================//
     //================================================================================================//
-    
+
+    void Awake() {
+        TeamsButterflies = new() {
+            [TeamType.Player] = new(),
+            [TeamType.Enemy] = new()
+        };
+    }
+
+    //================================================================================================//
+    //================================================================================================//
+
     public void AddButterfly(ButterflyType butterflyType, TeamType teamType) {
-        ButterflyTeams[teamType].Add(butterflyType);
+        Butterfly butterfly = InstantiateButterfly(butterflyType, teamType);
+        butterfly.ServiceManager = ServiceManager;
+        butterfly.Disable();
+
+        SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
+        TeamsButterflies[teamType].Add(butterfly);
+        ButterflyAdded.Invoke();
     }
 
-    public void ClearTeamButterflies(TeamType teamType) {
-        foreach (GameObject butterflyObject in ButterflyObjects[teamType]) {
-            Destroy(butterflyObject);
+    public void RemoveButterfly(Butterfly member, TeamType teamType) {
+        Destroy(member.gameObject);
+        TeamsButterflies[teamType].Remove(member);
+        ButterflyRemoved.Invoke();
+    }
+
+    public void SetButterflies(List<ButterflyType> butterflyTypes, TeamType teamType) {
+        foreach (ButterflyType butterflyType in butterflyTypes) {
+            Butterfly butterfly = InstantiateButterfly(butterflyType, teamType);
+            butterfly.ServiceManager = ServiceManager;
+            butterfly.Disable();
+
+            SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
+            TeamsButterflies[teamType].Add(butterfly);
         }
+        ButterflyAdded.Invoke();
     }
 
-    public void ClearAllButterflies(){
-        ClearTeamButterflies(TeamType.Player);
-        ClearTeamButterflies(TeamType.Enemy);    
+    public void ClearButterflies(TeamType teamType) {
+        foreach (Butterfly butterfly in TeamsButterflies[teamType]) {
+            Destroy(butterfly.gameObject);
+        }
+        TeamsButterflies[teamType].Clear();
+        ButterflyRemoved.Invoke();
     }
 
-    public void SpawnTeamButterflies(TeamType teamType) {
-        foreach (ButterflyType butterflyType in ButterflyTeams[teamType]) {
-            GameObject butterflyObject = Instantiate(ButterflyPrefab);
-            Animator animatorController = butterflyObject.GetComponent<Animator>();
-            animatorController.runtimeAnimatorController = ButterflyDatas[(int) butterflyType].animatorController;
-
-            if (teamType == TeamType.Enemy) {
-                SpriteRenderer spriteRenderer = butterflyObject.GetComponent<SpriteRenderer>();
-                spriteRenderer.color = new(1, 0.5f, 0.5f);
-
-                Butterfly butterfly = butterflyObject.GetComponent<Butterfly>();
-                butterfly.TeamType = TeamType.Enemy;
+    public void EnableAllButterfly() {
+        foreach (List<Butterfly> butterflies in TeamsButterflies.Values) {
+            foreach (Butterfly butterfly in butterflies) {
+                butterfly.Enable();
             }
         }
     }
-
+    
     //================================================================================================//
     //================================================================================================//
 
-    void Awake()
-    {
-        ButterflyTeams = new() {
-            [TeamType.Player] = new(),
-            [TeamType.Enemy] = new(),
-        };  
-    }
+    private Butterfly InstantiateButterfly(ButterflyType butterflyType, TeamType teamType) {
+        ButterflyData butterflyData = ButterflyDatas[(int) butterflyType];
+        Butterfly butterfly = Instantiate(butterflyData.Prefab, transform);
+        butterfly.TeamType = teamType;
 
-    void Start()
-    {
-        AddButterfly(ButterflyType.AdonisBlue, TeamType.Player);
-        // AddButterfly(ButterflyType.AdonisBlue, TeamType.Player);
-        // AddButterfly(ButterflyType.AdonisBlue, TeamType.Player);
-        // AddButterfly(ButterflyType.ChequeredSkipper, TeamType.Enemy);
-        // AddButterfly(ButterflyType.ChequeredSkipper, TeamType.Enemy);
-        // AddButterfly(ButterflyType.ChequeredSkipper, TeamType.Enemy);
-        SpawnTeamButterflies(TeamType.Player);
-        SpawnTeamButterflies(TeamType.Enemy);
+        Animator animator = butterfly.GetComponent<Animator>();
+        animator.runtimeAnimatorController = butterflyData.AnimatorController;
+        return butterfly;
     }
 
     //================================================================================================//

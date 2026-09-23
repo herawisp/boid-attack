@@ -9,8 +9,8 @@ public class SteeringBehaviour : MonoBehaviour {
     public Vector2 Position = Vector2.zero;
     public Vector2 Velocity = Vector2.zero;
     public Vector2 SteeringForce = Vector2.zero;
-    public float MaxSpeed = 1;
-    public float MaxForce = 0.1f;
+    public float MaxSpeed = 0.007f;
+    public float MaxForce = 5e-05f;
 
     [Header("Behaviour Weights")]
     public float SeekForceWeight;
@@ -34,10 +34,10 @@ public class SteeringBehaviour : MonoBehaviour {
     public float ArriveSlowingRadius;
 
     [Header("Wander Behaviour")]
-    public float WanderDistance;
-    public float WanderPower;
+    public float WanderDistance = 5f;
+    public float WanderPower = 3f;
+    public float WanderChange = 7f;
     public float WanderAngle;
-    public float WanderChange;
 
     [Header("Flocking Behaviour")]
     public List<SteeringBehaviour> AgentFlockList;

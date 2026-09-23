@@ -4,5 +4,5 @@ using UnityEngine;
 public class ButterflyData : ScriptableObject
 {
     public RuntimeAnimatorController AnimatorController;
-    public GameObject Prefab;
+    public Butterfly Prefab;
 }
