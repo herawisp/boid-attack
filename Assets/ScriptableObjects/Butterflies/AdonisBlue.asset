@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: AdonisBlue
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: 008d063a50e177445b378acdbd372312, type: 2}
+  AnimatorController: {fileID: 9100000, guid: ac43fbe098755024386c17fbaa7bc1e4, type: 2}
+  Prefab: {fileID: -3371507109695851518, guid: 6020f96a640d6734ca7efc42510680e7, type: 3}
+  Health: 10

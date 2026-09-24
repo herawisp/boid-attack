@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6528289391319697360
+--- !u!1 &1567861940483196999
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7793617452120080051}
-  - component: {fileID: 6325481013748654873}
-  - component: {fileID: 8471795132123554240}
-  - component: {fileID: -3371507109695851518}
-  - component: {fileID: 2674446851622041472}
-  - component: {fileID: 438858960286167763}
-  - component: {fileID: 6028536908076225104}
+  - component: {fileID: 5652242783869834987}
+  - component: {fileID: 8125656443803538964}
+  - component: {fileID: 2564863301160044483}
+  - component: {fileID: 1876514656318090176}
+  - component: {fileID: 1362175661737368466}
   m_Layer: 0
-  m_Name: Adonis Blue
+  m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7793617452120080051
+--- !u!4 &5652242783869834987
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
+  m_GameObject: {fileID: 1567861940483196999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.929, y: 0.431, z: 0}
+  m_LocalPosition: {x: 2.26747, y: 3.08241, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6325481013748654873
+--- !u!212 &8125656443803538964
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
+  m_GameObject: {fileID: 1567861940483196999}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -86,88 +84,62 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3243505085284577073, guid: 0686bd0c933c83a4d9846864477dd125, type: 3}
+  m_Sprite: {fileID: 4405297830623518684, guid: bf3139a7fe2488a4eab44d9790766dee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.08, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &8471795132123554240
-Animator:
-  serializedVersion: 7
+--- !u!50 &2564863301160044483
+Rigidbody2D:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9b6ac96a59f59994586159d5781f5bba, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-3371507109695851518
+  m_GameObject: {fileID: 1567861940483196999}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1876514656318090176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
+  m_GameObject: {fileID: 1567861940483196999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc58a134f14515d46b114512a79d75e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e68c047be5b5324180dd649e8664e99, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Butterfly
-  ServiceManager: {fileID: 0}
-  butterflyType: 0
-  TeamType: 0
-  Health: 0
-  MaxHealth: 0
---- !u!114 &2674446851622041472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f548e77a396b9a54cb2bd1037bf91456, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Shooter
-  BulletPrefab: {fileID: 1876514656318090176, guid: 774d6cb417e6713428e1e8ea357534ce, type: 3}
-  ProjectileAmount: 3
---- !u!114 &438858960286167763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ee84a61b1e91541a90afed3749eec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Vision
---- !u!61 &6028536908076225104
+  m_EditorClassIdentifier: Assembly-CSharp::Bullet
+--- !u!61 &1362175661737368466
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
+  m_GameObject: {fileID: 1567861940483196999}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -199,11 +171,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9583333, y: 0.6875}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.08, y: 0.16}
+    newSize: {x: 0.08, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9583333, y: 0.51}
+  m_Size: {x: 0.08, y: 0.16}
   m_EdgeRadius: 0

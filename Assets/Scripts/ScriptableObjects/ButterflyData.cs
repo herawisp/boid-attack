@@ -5,4 +5,5 @@ public class ButterflyData : ScriptableObject
 {
     public RuntimeAnimatorController AnimatorController;
     public Butterfly Prefab;
+    public int Health;
 }

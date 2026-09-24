@@ -5,27 +5,36 @@ public class Bullet : MonoBehaviour {
     //================================================================================================//
     //================================================================================================//
 
-    Vector3 direction;
+    Vector3 _direction;
     Rigidbody2D _rigidBody;
 
     //================================================================================================//
     //================================================================================================//
 
-    public Bullet(Vector3 direction) {
-        this.direction = direction;
-        LookAtMovingDirection();
-    }
-
     void Awake() {
         _rigidBody = GetComponent<Rigidbody2D>();
     }
-    
+
+    void Update()
+    {
+        _rigidBody.linearVelocity = _direction;
+        if (ScreenUtils.IsOutsideBorder(transform.position)) {
+            Destroy(gameObject);
+        }
+    }
+
     //================================================================================================//
     //================================================================================================//
 
+    public void Shoot(Vector3 position, Vector3 direction) {
+        _direction = direction * 10;
+        transform.position = position;
+        LookAtMovingDirection();
+    }
+
     void LookAtMovingDirection() {
-        if (direction.sqrMagnitude == 0.0f) return;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+        if (_direction.sqrMagnitude == 0.0f) return;
+        float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg - 90f;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 

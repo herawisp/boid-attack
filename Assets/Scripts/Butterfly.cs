@@ -7,7 +7,12 @@ public class Butterfly : MonoBehaviour {
     //================================================================================================//
 
     public ServiceManager ServiceManager;
+    public ButterflyType butterflyType;
     public TeamType TeamType;
+
+
+    public int Health;
+    public int MaxHealth;
 
     Movement _movement;
 
@@ -24,10 +29,26 @@ public class Butterfly : MonoBehaviour {
         _movement.UpdateFlockingAgents(ServiceManager.ButterflyService.SteeringBehaviours);
         _movement.TeamType = TeamType;
         _movement.Paused = false;
+
+        ButterflyData butterflyData = ServiceManager.ButterflyService.ButterflyDatas[(int) butterflyType];
+        Health = butterflyData.Health;
+        MaxHealth = butterflyData.Health;
     }
 
     public void Disable() {
         _movement.Paused = true;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == TeamType.ToString()) return;
+        Destroy(collision.gameObject);
+        Health--;
+
+        if (Health == 0)
+        {
+            ServiceManager.ButterflyService.RemoveButterfly(this, TeamType);
+        }
     }
     
     //================================================================================================//

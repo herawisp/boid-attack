@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "Shortcut",
+            "id": "8db40e1e-726f-420d-b0d1-6e053717d784",
+            "actions": [
+                {
+                    "name": "OpenMap",
+                    "type": "Button",
+                    "id": "7c75ad24-35b1-4265-b596-a63401e60886",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7371d01f-e45d-46e3-af5c-79ca82c999f9",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenMap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
