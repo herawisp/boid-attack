@@ -4,7 +4,6 @@ using UnityEngine;
 public class ButterflyData : ScriptableObject
 {
     public RuntimeAnimatorController AnimatorController;
-    public Butterfly Prefab;
     public float Health, AttackDamage, Cooldown;
     public AbilityData[] Abilities;
 }

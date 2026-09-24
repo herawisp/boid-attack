@@ -11,10 +11,12 @@ public class Vision : MonoBehaviour {
             return null;
         }
         
-        Butterfly closestButterfly = opposingTeamButterflies[0];
+        Butterfly closestButterfly = null;
         float closestDistance = Mathf.Infinity;
 
         foreach (Butterfly butterfly in opposingTeamButterflies) {
+            if (!butterfly.Enabled) continue;
+
             Vector3 butterflyPosition = butterfly.transform.position;
             float distance = Vector3.Distance(butterflyPosition, position);
             if (distance >= closestDistance) continue;
@@ -22,6 +24,7 @@ public class Vision : MonoBehaviour {
             closestButterfly = butterfly;
             closestDistance = distance;
         }    
+        
         return closestButterfly;
     }
 }

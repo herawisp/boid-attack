@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour {
 
     public float AttackDamage;
     public TeamType TeamType;
+    public bool Empowered;
 
     Vector3 _direction;
     Rigidbody2D _rigidBody;

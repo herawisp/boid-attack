@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: CrypticWoodWhite
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: 0ff95870987b1d841b9f3ea53515bbd1, type: 2}
+  AnimatorController: {fileID: 9100000, guid: 0ff95870987b1d841b9f3ea53515bbd1, type: 2}
+  Health: 100
+  AttackDamage: 10
+  Cooldown: 1
+  Abilities:
+  - {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}

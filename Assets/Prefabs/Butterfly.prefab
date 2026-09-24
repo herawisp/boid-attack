@@ -11,12 +11,10 @@ GameObject:
   - component: {fileID: 7793617452120080051}
   - component: {fileID: 6325481013748654873}
   - component: {fileID: 8471795132123554240}
-  - component: {fileID: -3371507109695851518}
-  - component: {fileID: 2674446851622041472}
-  - component: {fileID: 438858960286167763}
   - component: {fileID: 6028536908076225104}
+  - component: {fileID: -5688026219355096811}
   m_Layer: 0
-  m_Name: Adonis Blue
+  m_Name: Butterfly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,48 +116,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-3371507109695851518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc58a134f14515d46b114512a79d75e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Butterfly
-  Health: 0
-  MaxHealth: 0
-  ButterflyData: {fileID: 11400000, guid: 35f43a2817aeff44eb664aea6db62fb0, type: 2}
-  TeamType: 0
---- !u!114 &2674446851622041472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f548e77a396b9a54cb2bd1037bf91456, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Shooter
-  BulletPrefab: {fileID: 1876514656318090176, guid: 774d6cb417e6713428e1e8ea357534ce, type: 3}
-  ProjectileAmount: 3
---- !u!114 &438858960286167763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6528289391319697360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ee84a61b1e91541a90afed3749eec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Vision
 --- !u!61 &6028536908076225104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -206,3 +162,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9583333, y: 0.51}
   m_EdgeRadius: 0
+--- !u!114 &-5688026219355096811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6528289391319697360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc58a134f14515d46b114512a79d75e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Butterfly
+  Health: 0
+  MaxHealth: 0
+  ButterflyData: {fileID: 0}
+  TeamType: 0
+  Vision: {fileID: 0}

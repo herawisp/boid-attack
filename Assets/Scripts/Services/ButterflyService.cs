@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -28,6 +29,7 @@ public class ButterflyService: MonoBehaviour {
     //================================================================================================//
 
     [Header("Butterfly Datas")]
+    public Butterfly ButterflyPrefab;
     public List<ButterflyData> ButterflyDatas;
     public List<SteeringBehaviour> SteeringBehaviours;
     public Dictionary<TeamType, List<Butterfly>> TeamsButterflies = new() {
@@ -85,14 +87,23 @@ public class ButterflyService: MonoBehaviour {
             }
         }
     }
+
+    public int CountEnabledButterfly() {
+        int count = 0;
+        foreach (List<Butterfly> butterflies in TeamsButterflies.Values) {
+            foreach (Butterfly butterfly in butterflies) {
+                if (butterfly.gameObject.activeInHierarchy) count++; 
+            }
+        }
+        return count;
+    }
     
     //================================================================================================//
     //================================================================================================//
 
     private Butterfly InstantiateButterfly(ButterflyType butterflyType, TeamType teamType) {
         ButterflyData butterflyData = ButterflyDatas[(int) butterflyType];
-        Butterfly butterfly = Instantiate(butterflyData.Prefab, transform);
-        butterfly.TeamType = teamType;
+        Butterfly butterfly = Instantiate(ButterflyPrefab, transform);
 
         Animator animator = butterfly.GetComponent<Animator>();
         animator.runtimeAnimatorController = butterflyData.AnimatorController;
@@ -101,6 +112,8 @@ public class ButterflyService: MonoBehaviour {
             SpriteRenderer spriteRenderer = butterfly.GetComponent<SpriteRenderer>();
             spriteRenderer.color = new(1, 0.5f, 0.5f);
         }
+
+        butterfly.Initialize(butterflyData, teamType);
         return butterfly;
     }
 

@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: OrangeTip
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: e79df7e556d0e4c4092cdf63c76fe2ea, type: 2}
+  AnimatorController: {fileID: 9100000, guid: e79df7e556d0e4c4092cdf63c76fe2ea, type: 2}
+  Health: 70
+  AttackDamage: 10
+  Cooldown: 1
+  Abilities:
+  - {fileID: 11400000, guid: 57a8b43dbcdd53b40816fa4e4dbf54c2, type: 2}

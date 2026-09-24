@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbc7222fb9424944e86d28c15f933565, type: 3}
-  m_Name: Single Shot
+  m_Name: Trifurcation
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileAbility
   AngleOffsets:
+  - -45
   - 0
+  - 45
   ProjectileAmount: 1
-  DelayBetweenShots: 0.1
+  DelayBetweenShots: 0.2
   Homing: 0
+  Empowered: 0
   BulletPrefab: {fileID: 1876514656318090176, guid: 774d6cb417e6713428e1e8ea357534ce, type: 3}

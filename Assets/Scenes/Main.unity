@@ -467,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f94394b9ac8a894ca61aa16f3119d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyService
+  ButterflyPrefab: {fileID: -5688026219355096811, guid: 6020f96a640d6734ca7efc42510680e7, type: 3}
   ButterflyDatas:
   - {fileID: 11400000, guid: 35f43a2817aeff44eb664aea6db62fb0, type: 2}
   - {fileID: 11400000, guid: 0894e9be304472d49893d4a8969b7d76, type: 2}
