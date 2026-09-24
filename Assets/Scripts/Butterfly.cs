@@ -6,7 +6,6 @@ public class Butterfly : MonoBehaviour {
     //================================================================================================//
     //================================================================================================//
 
-    public ServiceManager ServiceManager;
     public ButterflyType butterflyType;
     public TeamType TeamType;
 
@@ -26,11 +25,11 @@ public class Butterfly : MonoBehaviour {
     }
 
     public void Enable() {
-        _movement.UpdateFlockingAgents(ServiceManager.ButterflyService.SteeringBehaviours);
+        _movement.UpdateFlockingAgents(ButterflyService.Instance.SteeringBehaviours);
         _movement.TeamType = TeamType;
         _movement.Paused = false;
 
-        ButterflyData butterflyData = ServiceManager.ButterflyService.ButterflyDatas[(int) butterflyType];
+        ButterflyData butterflyData = ButterflyService.Instance.ButterflyDatas[(int) butterflyType];
         Health = butterflyData.Health;
         MaxHealth = butterflyData.Health;
     }
@@ -47,7 +46,7 @@ public class Butterfly : MonoBehaviour {
 
         if (Health == 0)
         {
-            ServiceManager.ButterflyService.RemoveButterfly(this, TeamType);
+            ButterflyService.Instance.RemoveButterfly(this, TeamType);
         }
     }
     

@@ -13,14 +13,27 @@ public enum ButterflyType {
 
 public class ButterflyService: MonoBehaviour {
 
+    public static ButterflyService Instance {get; private set;}
+
+    void Awake() {
+        if (Instance != null && Instance != this) {
+            Destroy(this);
+        } else {
+            Instance = this;
+        }
+    }
+
+
     //================================================================================================//
     //================================================================================================//
 
     [Header("Butterfly Datas")]
-    public ServiceManager ServiceManager;
     public List<ButterflyData> ButterflyDatas;
     public List<SteeringBehaviour> SteeringBehaviours;
-    public Dictionary<TeamType, List<Butterfly>> TeamsButterflies;
+    public Dictionary<TeamType, List<Butterfly>> TeamsButterflies = new() {
+        [TeamType.Player] = new(),
+        [TeamType.Enemy] = new()
+    };
 
     [Header("Unity Events")]
     public UnityEvent ButterflyAdded;
@@ -29,19 +42,8 @@ public class ButterflyService: MonoBehaviour {
     //================================================================================================//
     //================================================================================================//
 
-    void Awake() {
-        TeamsButterflies = new() {
-            [TeamType.Player] = new(),
-            [TeamType.Enemy] = new()
-        };
-    }
-
-    //================================================================================================//
-    //================================================================================================//
-
     public void AddButterfly(ButterflyType butterflyType, TeamType teamType) {
         Butterfly butterfly = InstantiateButterfly(butterflyType, teamType);
-        butterfly.ServiceManager = ServiceManager;
         butterfly.Disable();
 
         SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
@@ -58,7 +60,6 @@ public class ButterflyService: MonoBehaviour {
     public void SetButterflies(List<ButterflyType> butterflyTypes, TeamType teamType) {
         foreach (ButterflyType butterflyType in butterflyTypes) {
             Butterfly butterfly = InstantiateButterfly(butterflyType, teamType);
-            butterfly.ServiceManager = ServiceManager;
             butterfly.Disable();
 
             SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
