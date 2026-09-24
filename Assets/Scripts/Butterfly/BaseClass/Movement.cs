@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Data.Common;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour {
     
     //================================================================================================//
     //================================================================================================//
 
-    public Transform ButterflyTransform;
     public TeamType TeamType;
     public bool Paused;
 
@@ -49,15 +49,15 @@ public class Movement : MonoBehaviour {
 
     void UpdatePlayerMovement() {
         _steeringBehaviour.SeekTargetPosition = GetMouseSeekPosition();
-        ButterflyTransform.position = _steeringBehaviour.Position;
+        transform.position = _steeringBehaviour.Position;
         LookAtMovingDirection();
 
-        bool isOutsideBorder = ScreenUtils.IsOutsideBorder(ButterflyTransform.position);
+        bool isOutsideBorder = ScreenUtils.IsOutsideBorder(transform.position);
         if (isOutsideBorder) {
             _steeringBehaviour.SeekForceWeight = 1f;
             _steeringBehaviour.FleeForceWeight = 0;
         } else {
-            (Vector3 borderPosition, float distance) = ScreenUtils.GetClosestDistanceToBorder(ButterflyTransform.position);
+            (Vector3 borderPosition, float distance) = ScreenUtils.GetClosestDistanceToBorder(transform.position);
             if (distance <= 3) {
                 _steeringBehaviour.WanderForceWeight = 0f;
                 _steeringBehaviour.SeekForceWeight = 0f;
@@ -72,16 +72,16 @@ public class Movement : MonoBehaviour {
     }
 
     void UpdateEnemyMovement() {
-        ButterflyTransform.position = _steeringBehaviour.Position;
+        transform.position = _steeringBehaviour.Position;
         LookAtMovingDirection();
 
-        bool isOutsideBorder = ScreenUtils.IsOutsideBorder(ButterflyTransform.position);
+        bool isOutsideBorder = ScreenUtils.IsOutsideBorder(transform.position);
         if (isOutsideBorder) {
-            _steeringBehaviour.SeekTargetPosition = ScreenUtils.GetMiddleWorldPosition(ButterflyTransform.position);
+            _steeringBehaviour.SeekTargetPosition = ScreenUtils.GetMiddleWorldPosition(transform.position);
             _steeringBehaviour.SeekForceWeight = 1f;
             _steeringBehaviour.FleeForceWeight = 0f;
         } else {
-            (Vector3 borderPosition, float distance) = ScreenUtils.GetClosestDistanceToBorder(ButterflyTransform.position); 
+            (Vector3 borderPosition, float distance) = ScreenUtils.GetClosestDistanceToBorder(transform.position); 
             if (distance <= 3) {
                 _steeringBehaviour.WanderForceWeight = 0f;
                 _steeringBehaviour.SeekForceWeight = 0f;
@@ -102,13 +102,13 @@ public class Movement : MonoBehaviour {
         Vector2 velocity = _steeringBehaviour.Velocity;
         if (velocity.sqrMagnitude ==  0.0f) return;
         float angle = Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg - 90f;
-        ButterflyTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     Vector2 GetMouseSeekPosition() {
         Vector3 mouseWorldPosition = ScreenUtils.GetMouseWorldPosition();
         bool isMouseOutsideBorder = ScreenUtils.IsOutsideBorder(mouseWorldPosition);
-        if (isMouseOutsideBorder) mouseWorldPosition = ScreenUtils.GetMiddleWorldPosition(ButterflyTransform.position);
+        if (isMouseOutsideBorder) mouseWorldPosition = ScreenUtils.GetMiddleWorldPosition(transform.position);
         return new(mouseWorldPosition.x, mouseWorldPosition.y);
     }
 

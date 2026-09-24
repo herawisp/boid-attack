@@ -3,15 +3,9 @@ using UnityEngine;
 
 public class Vision : MonoBehaviour {
 
-    Butterfly _butterfly;
-
-    void Awake() {
-        _butterfly = GetComponent<Butterfly>();
-    }
-
     public Butterfly GetNearestOpposingButterfly(TeamType teamType, Vector3 position) {
         TeamType opposingTeam = (teamType == TeamType.Player) ? TeamType.Enemy : TeamType.Player;
-        List<Butterfly> opposingTeamButterflies = _butterfly.ServiceManager.ButterflyService.TeamsButterflies[opposingTeam];
+        List<Butterfly> opposingTeamButterflies = ButterflyService.Instance.TeamsButterflies[opposingTeam];
 
         if (opposingTeamButterflies == null || opposingTeamButterflies.Count == 0) {
             return null;

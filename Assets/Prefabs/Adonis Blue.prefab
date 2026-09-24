@@ -130,11 +130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc58a134f14515d46b114512a79d75e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Butterfly
-  ServiceManager: {fileID: 0}
-  butterflyType: 0
-  TeamType: 0
   Health: 0
   MaxHealth: 0
+  ButterflyData: {fileID: 11400000, guid: 35f43a2817aeff44eb664aea6db62fb0, type: 2}
+  TeamType: 0
 --- !u!114 &2674446851622041472
 MonoBehaviour:
   m_ObjectHideFlags: 0
