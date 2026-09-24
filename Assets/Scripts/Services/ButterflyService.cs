@@ -44,6 +44,7 @@ public class ButterflyService: MonoBehaviour {
 
     public void AddButterfly(ButterflyType butterflyType, TeamType teamType) {
         Butterfly butterfly = InstantiateButterfly(butterflyType, teamType);
+        butterfly.TeamType = teamType;
         butterfly.Disable();
 
         SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
@@ -60,6 +61,7 @@ public class ButterflyService: MonoBehaviour {
     public void SetButterflies(List<ButterflyType> butterflyTypes, TeamType teamType) {
         foreach (ButterflyType butterflyType in butterflyTypes) {
             Butterfly butterfly = InstantiateButterfly(butterflyType, teamType);
+            butterfly.TeamType = teamType;
             butterfly.Disable();
 
             SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());

@@ -198,6 +198,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &273286579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 273286580}
+  - component: {fileID: 273286581}
+  - component: {fileID: 273286582}
+  m_Layer: 5
+  m_Name: DungeonMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &273286580
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273286579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1118724430}
+  m_Father: {fileID: 1515766584}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &273286581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273286579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e44f3fd3d1e0ff459f58110387d622e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DungeonMap
+  DungeonRoomImage: {fileID: 6907172060268590108, guid: e8a922278ffd3a84ea63e1f68588744e, type: 3}
+  RoomSprites:
+  - {fileID: 0}
+  - {fileID: 3847003228906936812, guid: 0f8bd909b1a0cc5489c63d7a8c420568, type: 3}
+  - {fileID: -6707738262269877140, guid: ef32630050141ce4f989d3a29947e7ab, type: 3}
+  - {fileID: 3847003228906936812, guid: 0f8bd909b1a0cc5489c63d7a8c420568, type: 3}
+  - {fileID: 3847003228906936812, guid: 0f8bd909b1a0cc5489c63d7a8c420568, type: 3}
+  - {fileID: 3847003228906936812, guid: 0f8bd909b1a0cc5489c63d7a8c420568, type: 3}
+--- !u!114 &273286582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273286579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: fc7eeba0f0a99334fa600274300d0822, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Shortcut
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572870397}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -379,7 +467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f94394b9ac8a894ca61aa16f3119d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyService
-  ServiceManager: {fileID: 1211303354}
   ButterflyDatas:
   - {fileID: 11400000, guid: 35f43a2817aeff44eb664aea6db62fb0, type: 2}
   - {fileID: 11400000, guid: 0894e9be304472d49893d4a8969b7d76, type: 2}
@@ -500,14 +587,13 @@ GameObject:
   - component: {fileID: 1118724434}
   - component: {fileID: 1118724433}
   - component: {fileID: 1118724432}
-  - component: {fileID: 1118724431}
   m_Layer: 5
-  m_Name: DungeonMap
+  m_Name: RoomCells
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1118724430
 RectTransform:
   m_ObjectHideFlags: 0
@@ -515,38 +601,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118724429}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1515766584}
+  m_Father: {fileID: 273286580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1118724431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118724429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e44f3fd3d1e0ff459f58110387d622e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DungeonMap
-  DungeonRoomImage: {fileID: 6907172060268590108, guid: e8a922278ffd3a84ea63e1f68588744e, type: 3}
-  RoomSprites:
-  - {fileID: 0}
-  - {fileID: 3847003228906936812, guid: 0f8bd909b1a0cc5489c63d7a8c420568, type: 3}
-  - {fileID: -6707738262269877140, guid: ef32630050141ce4f989d3a29947e7ab, type: 3}
-  - {fileID: 3847003228906936812, guid: 0f8bd909b1a0cc5489c63d7a8c420568, type: 3}
-  - {fileID: 3847003228906936812, guid: 0f8bd909b1a0cc5489c63d7a8c420568, type: 3}
-  - {fileID: 3847003228906936812, guid: 0f8bd909b1a0cc5489c63d7a8c420568, type: 3}
 --- !u!114 &1118724432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,7 +684,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1211303353}
-  - component: {fileID: 1211303354}
   m_Layer: 0
   m_Name: Services
   m_TagString: Untagged
@@ -642,19 +707,6 @@ Transform:
   - {fileID: 572870398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1211303354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211303352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff580a7d86c6b34fb3cde88b2487837, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ServiceManager
-  ButterflyService: {fileID: 572870399}
 --- !u!1 &1264682737
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c087cd6a5583b647bd0f9996d6c6d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Test
-  serviceManager: {fileID: 1211303354}
 --- !u!4 &1264682739
 Transform:
   m_ObjectHideFlags: 0
@@ -794,7 +845,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1118724430}
+  - {fileID: 273286580}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

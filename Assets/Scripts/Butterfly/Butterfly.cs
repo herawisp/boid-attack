@@ -13,6 +13,7 @@ public class Butterfly : MonoBehaviour {
     [Header("Butterfly Datas")]
     public ButterflyData ButterflyData;
     public TeamType TeamType;
+    public Vision Vision;
 
     private Timer _timer;
     private Movement _movement;
@@ -28,11 +29,13 @@ public class Butterfly : MonoBehaviour {
 
         _timer = gameObject.AddComponent<Timer>();
         _timer.SetWaitTime(ButterflyData.Cooldown);  
+
+        Vision = gameObject.AddComponent<Vision>();
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
         Bullet bullet;
-        if (!collision.TryGetComponent<Bullet>(out bullet)) return;
+        if (!collision.TryGetComponent(out bullet)) return;
         if (collision.gameObject.name == TeamType.ToString()) return;
 
         Health -= bullet.AttackDamage;
