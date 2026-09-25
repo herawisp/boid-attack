@@ -30,12 +30,6 @@ public class FloorService : MonoBehaviour {
         DungeonData = dungeonGenerator.Generate();
         MapService.Instance.UpdateMap();
         UpdateDungeonRoom();
-
-        List<bool> NeighboursRoom = GetNeighboursRoom(DungeonData.CurrentCell);
-        for (int i = 0; i < 4; i++)
-        {
-            print(NeighboursRoom[i]);
-        }
     }
     
     public void MoveUp()

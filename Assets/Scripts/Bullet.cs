@@ -11,16 +11,19 @@ public class Bullet : MonoBehaviour {
 
     Vector3 _direction;
     Rigidbody2D _rigidBody;
+    Animator _animator;
+    SpriteRenderer _spriteRenderer;
 
     //================================================================================================//
     //================================================================================================//
 
     void Awake() {
         _rigidBody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
-    {
+    void Update() {
         _rigidBody.linearVelocity = _direction;
         if (ScreenUtils.IsOutsideBorder(transform.position)) {
             Destroy(gameObject);
@@ -34,6 +37,14 @@ public class Bullet : MonoBehaviour {
         _direction = direction * 10;
         transform.position = position;
         LookAtMovingDirection();
+    }
+
+    public void SetAnimationController(RuntimeAnimatorController animatorController) {
+        _animator.runtimeAnimatorController = animatorController;
+    }
+
+    public void SetTypeEnemy() {
+        _spriteRenderer.color = new(1, 0.5f, 0.5f);
     }
 
     void LookAtMovingDirection() {

@@ -13,6 +13,7 @@ public class ProjectileAbility : AbilityData {
     public float DelayBetweenShots = 0.5f;
     public bool Homing;
     public bool Empowered;
+    public RuntimeAnimatorController AnimatorController;
 
     public Bullet BulletPrefab;
 
@@ -54,6 +55,8 @@ public class ProjectileAbility : AbilityData {
         bullet.AttackDamage = self.ButterflyData.AttackDamage;
         bullet.TeamType = self.TeamType;
         bullet.Empowered = Empowered;
+        bullet.SetAnimationController(AnimatorController);
+        if (self.TeamType == TeamType.Enemy) bullet.SetTypeEnemy();
         bullet.Shoot(self.transform.position, direction);
     }
 

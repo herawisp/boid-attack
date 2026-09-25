@@ -40,6 +40,11 @@ public class Butterfly : MonoBehaviour {
         Vision = gameObject.AddComponent<Vision>();
     }
 
+    public void Heal(float amount) {
+        Health = Mathf.Min(Health + amount, MaxHealth);
+        ButterflyService.Instance.RaiseButterflyHealed(this);
+    }
+
     //================================================================================================//
     //================================================================================================//
 
