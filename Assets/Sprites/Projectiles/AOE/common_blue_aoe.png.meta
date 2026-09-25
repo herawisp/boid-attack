@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 3869cab8fa8c55f46a9e40d81b2b0483
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8391270767861805650
+    second: Common blue AoE-Sheet_0
+  - first:
+      213: 8962531469883643395
+    second: Common blue AoE-Sheet_1
+  - first:
+      213: -1127759782728322592
+    second: Common blue AoE-Sheet_2
+  - first:
+      213: -3689108711221407298
+    second: Common blue AoE-Sheet_3
+  - first:
+      213: -5485128860064510705
+    second: Common blue AoE-Sheet_4
+  - first:
+      213: 4284898085092946506
+    second: Common blue AoE-Sheet_5
+  - first:
+      213: -824954064986916402
+    second: Common blue AoE-Sheet_6
+  - first:
+      213: -7438549683165706483
+    second: Common blue AoE-Sheet_7
+  - first:
+      213: -3008627866293305530
+    second: Common blue AoE-Sheet_8
+  - first:
+      213: -8167766959494621031
+    second: Common blue AoE-Sheet_9
+  - first:
+      213: 5354939984177064721
+    second: Common blue AoE-Sheet_10
+  - first:
+      213: -5573128279094115146
+    second: Common blue AoE-Sheet_11
+  - first:
+      213: -1497816195280359123
+    second: Common blue AoE-Sheet_12
+  - first:
+      213: 4758279336917804254
+    second: Common blue AoE-Sheet_13
+  - first:
+      213: 462668356566429496
+    second: Common blue AoE-Sheet_14
+  - first:
+      213: 2546996811841884227
+    second: Common blue AoE-Sheet_15
+  - first:
+      213: -3193071105187212688
+    second: Common blue AoE-Sheet_16
+  - first:
+      213: 4421943402004773376
+    second: Common blue AoE-Sheet_17
+  - first:
+      213: -3731777275501117203
+    second: Common blue AoE-Sheet_18
+  - first:
+      213: 4372602702537595982
+    second: Common blue AoE-Sheet_19
+  - first:
+      213: 1614853685914721435
+    second: Common blue AoE-Sheet_20
+  - first:
+      213: -3585847225179737513
+    second: Common blue AoE-Sheet_21
+  - first:
+      213: -2020342917119449420
+    second: Common blue AoE-Sheet_22
+  - first:
+      213: 576452018164479498
+    second: Common blue AoE-Sheet_23
+  - first:
+      213: 8119123025253495268
+    second: Common blue AoE-Sheet_24
+  - first:
+      213: -7090428216899599280
+    second: Common blue AoE-Sheet_25
+  - first:
+      213: 7110938048959425758
+    second: Common blue AoE-Sheet_26
+  - first:
+      213: 3828883755058195896
+    second: Common blue AoE-Sheet_27
+  - first:
+      213: -1102249464089783182
+    second: Common blue AoE-Sheet_28
+  - first:
+      213: -8800598542734539350
+    second: Common blue AoE-Sheet_29
+  - first:
+      213: 5767992984952620235
+    second: Common blue AoE-Sheet_30
+  - first:
+      213: 6892185205937916459
+    second: Common blue AoE-Sheet_31
+  - first:
+      213: -5256766188055541150
+    second: Common blue AoE-Sheet_32
+  - first:
+      213: -909577911058890541
+    second: Common blue AoE-Sheet_33
+  - first:
+      213: 4690104980421749815
+    second: Common blue AoE-Sheet_34
+  - first:
+      213: -8177664824267503054
+    second: Common blue AoE-Sheet_35
+  - first:
+      213: 6659278148276330116
+    second: Common blue AoE-Sheet_36
+  - first:
+      213: -1772057393790859120
+    second: Common blue AoE-Sheet_37
+  - first:
+      213: -284091012556878079
+    second: Common blue AoE-Sheet_38
+  - first:
+      213: -5493588043126154404
+    second: Common blue AoE-Sheet_39
+  - first:
+      213: 6979618441827450058
+    second: Common blue AoE-Sheet_40
+  - first:
+      213: 3574725269129570191
+    second: Common blue AoE-Sheet_41
+  - first:
+      213: -5182172649523216487
+    second: Common blue AoE-Sheet_42
+  - first:
+      213: 2042662239271416108
+    second: Common blue AoE-Sheet_43
+  - first:
+      213: -7647036269221043015
+    second: Common blue AoE-Sheet_44
+  - first:
+      213: 8616444749590241307
+    second: Common blue AoE-Sheet_45
+  - first:
+      213: 2047797070331009745
+    second: Common blue AoE-Sheet_46
+  - first:
+      213: -2859408631227469154
+    second: Common blue AoE-Sheet_47
+  - first:
+      213: -8202203966181866560
+    second: Common blue AoE-Sheet_48
+  - first:
+      213: 3162560718117654691
+    second: Common blue AoE-Sheet_49
+  - first:
+      213: -5675895678594392426
+    second: Common blue AoE-Sheet_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Common blue AoE-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252b584fd48c37470800000000000000
+      internalID: 8391270767861805650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common blue AoE-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3069ca6e2ee416c70800000000000000
+      internalID: 8962531469883643395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common blue AoE-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1b186e3746950f0800000000000000
+      internalID: -1127759782728322592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common blue AoE-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb159d14c27adccc0800000000000000
+      internalID: -3689108711221407298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common blue AoE-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d8c9cfc58e0e3b0800000000000000
+      internalID: -5485128860064510705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common blue AoE-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4277b42b14077b30800000000000000
+      internalID: 4284898085092946506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common blue AoE-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9b07016ac2d84f0800000000000000
+      internalID: -824954064986916402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common blue AoE-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0740da6976f4c890800000000000000
+      internalID: -7438549683165706483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f6d95bb43c565ca40afd038431f74ae0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Common blue AoE-Sheet_0: 8391270767861805650
+      Common blue AoE-Sheet_1: 8962531469883643395
+      Common blue AoE-Sheet_2: -1127759782728322592
+      Common blue AoE-Sheet_3: -3689108711221407298
+      Common blue AoE-Sheet_4: -5485128860064510705
+      Common blue AoE-Sheet_5: 4284898085092946506
+      Common blue AoE-Sheet_6: -824954064986916402
+      Common blue AoE-Sheet_7: -7438549683165706483
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

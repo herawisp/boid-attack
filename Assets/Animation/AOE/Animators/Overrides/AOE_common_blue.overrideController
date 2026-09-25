@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AOE_common_blue
+  m_Controller: {fileID: 9100000, guid: 4831691c16c902c44a89e53656db7a6a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7656f0a3e96f3d34e96b17e73aee39ef, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6c49b65d769aad640a2dd193a2d356b9, type: 2}

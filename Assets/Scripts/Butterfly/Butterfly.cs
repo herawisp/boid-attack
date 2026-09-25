@@ -40,6 +40,9 @@ public class Butterfly : MonoBehaviour {
         Vision = gameObject.AddComponent<Vision>();
     }
 
+    //================================================================================================//
+    //================================================================================================//
+
     void OnTriggerEnter2D(Collider2D collision) {
         Bullet bullet;
         if (!collision.TryGetComponent(out bullet)) return;
@@ -53,33 +56,52 @@ public class Butterfly : MonoBehaviour {
         Destroy(collision.gameObject);
 
         if (Health > 0) return;
+        ButterflyService.Instance.RaiseButterflyDied(this);
         Disable();
     }
 
-    void OnCooldown() {
-        foreach (AbilityData abilityData in ButterflyData.Abilities) {
-            abilityData.Activate(this);
+    void Trigger(AbilityTrigger trigger) {
+        foreach (AbilityEntry entry in ButterflyData.Abilities) {
+            if (entry.Trigger == trigger)
+                entry.Ability.Activate(this);
         }
     }
-
-    //================================================================================================//
-    //================================================================================================//
 
     public void Enable() {
         Health = ButterflyData.Health;
         MaxHealth = ButterflyData.Health;
-        Enabled = true;
-        gameObject.SetActive(true);
         _movement.Paused = false;
         _timer.Paused = false;
+        gameObject.SetActive(true);
+        Enabled = true;
+
+        ButterflyService.Instance.ButterflyDied += OnAnyButterflyDied;
+        ButterflyService.Instance.ButterflyHealed += OnAnyButterflyHealed;
     }
 
     public void Disable() {
-        Enabled = false;
-        gameObject.SetActive(false);
         _movement.Paused = true;
         _timer.Paused = true;
+        gameObject.SetActive(false);
+        Enabled = false;
+
+        ButterflyService.Instance.ButterflyDied -= OnAnyButterflyDied;
+        ButterflyService.Instance.ButterflyHealed -= OnAnyButterflyHealed;
     }
+
+    void OnAnyButterflyDied(Butterfly dead) {
+    if (dead == this)
+        Trigger(AbilityTrigger.OnSelfDied);
+    else if (dead.TeamType == TeamType && Health > 0)
+        Trigger(AbilityTrigger.OnAllyDied);
+    }
+
+    void OnAnyButterflyHealed(Butterfly healed) {
+        if (healed != this && healed.TeamType == TeamType)
+            Trigger(AbilityTrigger.OnAllyHealed);
+    }
+
+    void OnCooldown() => Trigger(AbilityTrigger.OnCooldown);
     
     //================================================================================================//
     //================================================================================================//

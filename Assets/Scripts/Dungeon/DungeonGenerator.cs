@@ -54,7 +54,44 @@ public class DungeonGenerator {
         _data.Cells[PopRandomEndRoom()] = RoomType.Key;
         _data.Cells[PopRandomEndRoom()] = RoomType.Exit;
 
+        Trim();
         return _data;
+    }
+
+    public void Trim() {
+        int minCol = 10, maxCol = -1;
+        int minRow = 10, maxRow = -1;
+
+        for (int i = 0; i < _data.Cells.Length; i++) {
+            if (_data.Cells[i] == RoomType.None) continue;
+            int col = i % 10;
+            int row = i / 10;
+            minCol = Mathf.Min(minCol, col);
+            maxCol = Mathf.Max(maxCol, col);
+            minRow = Mathf.Min(minRow, row);
+            maxRow = Mathf.Max(maxRow, row);
+        }
+
+        if (maxCol < 0) return;
+
+        int newWidth = maxCol - minCol + 1;
+        int newHeight = maxRow - minRow + 1;
+        RoomType[] trimmed = new RoomType[newWidth * newHeight];
+
+        for (int row = minRow; row <= maxRow; row++) {
+            for (int col = minCol; col <= maxCol; col++) {
+                trimmed[(row - minRow) * newWidth + (col - minCol)] = _data.Cells[row * 10 + col];
+            }
+        }
+
+        int startCol = 45 % 10 - minCol;
+        int startRow = 45 / 10 - minRow;
+        _data.StartCell = startRow * newWidth + startCol;
+        _data.CurrentCell = _data.StartCell;
+
+        _data.Cells = trimmed;
+        _data.Width = newWidth;
+        _data.Height = newHeight;
     }
 
     private int PopRandomEndRoom() {

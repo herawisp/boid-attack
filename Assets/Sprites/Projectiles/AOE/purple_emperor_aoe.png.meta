@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 5a575aab704adae4fb288b101df08b91
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3019075410818105706
+    second: Purple emperorAoE-Sheet_0
+  - first:
+      213: 4097227478063512781
+    second: Purple emperorAoE-Sheet_1
+  - first:
+      213: 6319013318933095215
+    second: Purple emperorAoE-Sheet_2
+  - first:
+      213: 6691383922981071156
+    second: Purple emperorAoE-Sheet_3
+  - first:
+      213: -845788228615241846
+    second: Purple emperorAoE-Sheet_4
+  - first:
+      213: -1393881947180636113
+    second: Purple emperorAoE-Sheet_5
+  - first:
+      213: 3142740991461824470
+    second: Purple emperorAoE-Sheet_6
+  - first:
+      213: -1747130639352664057
+    second: Purple emperorAoE-Sheet_7
+  - first:
+      213: -7361417338386225344
+    second: Purple emperorAoE-Sheet_8
+  - first:
+      213: -4067139577843097554
+    second: Purple emperorAoE-Sheet_9
+  - first:
+      213: -8686259348731915586
+    second: Purple emperorAoE-Sheet_10
+  - first:
+      213: -3770419883940815688
+    second: Purple emperorAoE-Sheet_11
+  - first:
+      213: 6762115114813091599
+    second: Purple emperorAoE-Sheet_12
+  - first:
+      213: 5074202862127810072
+    second: Purple emperorAoE-Sheet_13
+  - first:
+      213: -4470663608800623578
+    second: Purple emperorAoE-Sheet_14
+  - first:
+      213: 1990323104019498518
+    second: Purple emperorAoE-Sheet_15
+  - first:
+      213: -7135942260627259392
+    second: Purple emperorAoE-Sheet_16
+  - first:
+      213: 6949227558886077880
+    second: Purple emperorAoE-Sheet_17
+  - first:
+      213: 5968090678427756228
+    second: Purple emperorAoE-Sheet_18
+  - first:
+      213: -516715224156863225
+    second: Purple emperorAoE-Sheet_19
+  - first:
+      213: 7009162910175885589
+    second: Purple emperorAoE-Sheet_20
+  - first:
+      213: 948416615201271697
+    second: Purple emperorAoE-Sheet_21
+  - first:
+      213: -7696493168240911698
+    second: Purple emperorAoE-Sheet_22
+  - first:
+      213: 471764452395438942
+    second: Purple emperorAoE-Sheet_23
+  - first:
+      213: 6118793941404827958
+    second: Purple emperorAoE-Sheet_24
+  - first:
+      213: -5360790055431758537
+    second: Purple emperorAoE-Sheet_25
+  - first:
+      213: 2627207753597412573
+    second: Purple emperorAoE-Sheet_26
+  - first:
+      213: -4552427834881885599
+    second: Purple emperorAoE-Sheet_27
+  - first:
+      213: 8816442240617150822
+    second: Purple emperorAoE-Sheet_28
+  - first:
+      213: 2083036535710097802
+    second: Purple emperorAoE-Sheet_29
+  - first:
+      213: 6164318721142879394
+    second: Purple emperorAoE-Sheet_30
+  - first:
+      213: 9028637261624508772
+    second: Purple emperorAoE-Sheet_31
+  - first:
+      213: 3307939097742908356
+    second: Purple emperorAoE-Sheet_32
+  - first:
+      213: -6011048899794341114
+    second: Purple emperorAoE-Sheet_33
+  - first:
+      213: 1637113135606170696
+    second: Purple emperorAoE-Sheet_34
+  - first:
+      213: 4807701821973491066
+    second: Purple emperorAoE-Sheet_35
+  - first:
+      213: -9174465282022920051
+    second: Purple emperorAoE-Sheet_36
+  - first:
+      213: -7160446027787892042
+    second: Purple emperorAoE-Sheet_37
+  - first:
+      213: 6473220022908540871
+    second: Purple emperorAoE-Sheet_38
+  - first:
+      213: -3849421790588444437
+    second: Purple emperorAoE-Sheet_39
+  - first:
+      213: -7394924642733649719
+    second: Purple emperorAoE-Sheet_40
+  - first:
+      213: 6353695890009514710
+    second: Purple emperorAoE-Sheet_41
+  - first:
+      213: 5724728381016818161
+    second: Purple emperorAoE-Sheet_42
+  - first:
+      213: -6770422679667623940
+    second: Purple emperorAoE-Sheet_43
+  - first:
+      213: -994527759937010805
+    second: Purple emperorAoE-Sheet_44
+  - first:
+      213: 3421809046633828439
+    second: Purple emperorAoE-Sheet_45
+  - first:
+      213: 5444922198644148583
+    second: Purple emperorAoE-Sheet_46
+  - first:
+      213: -4675628283634378526
+    second: Purple emperorAoE-Sheet_47
+  - first:
+      213: 7717383232129246603
+    second: Purple emperorAoE-Sheet_48
+  - first:
+      213: 8312955778183242374
+    second: Purple emperorAoE-Sheet_49
+  - first:
+      213: 7428994834409439920
+    second: Purple emperorAoE-Sheet_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Purple emperorAoE-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a610ee32719e5e920800000000000000
+      internalID: 3019075410818105706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple emperorAoE-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccf1f9eea64cd830800000000000000
+      internalID: 4097227478063512781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple emperorAoE-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2328fd4225a1b750800000000000000
+      internalID: 6319013318933095215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple emperorAoE-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439eb09b9329cdc50800000000000000
+      internalID: 6691383922981071156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple emperorAoE-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f7e2656182344f0800000000000000
+      internalID: -845788228615241846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple emperorAoE-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28e77f01cfe7ace0800000000000000
+      internalID: -1393881947180636113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple emperorAoE-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d71421e7424d9b20800000000000000
+      internalID: 3142740991461824470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple emperorAoE-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700fe21b0f1f0c7e0800000000000000
+      internalID: -1747130639352664057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ec4f7ae5804b9f54f8f2893e362eac2e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Purple emperorAoE-Sheet_0: 3019075410818105706
+      Purple emperorAoE-Sheet_1: 4097227478063512781
+      Purple emperorAoE-Sheet_2: 6319013318933095215
+      Purple emperorAoE-Sheet_3: 6691383922981071156
+      Purple emperorAoE-Sheet_4: -845788228615241846
+      Purple emperorAoE-Sheet_5: -1393881947180636113
+      Purple emperorAoE-Sheet_6: 3142740991461824470
+      Purple emperorAoE-Sheet_7: -1747130639352664057
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

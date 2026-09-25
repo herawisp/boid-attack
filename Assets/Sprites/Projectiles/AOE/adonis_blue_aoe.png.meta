@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 429d86a751bb13b4ba98be4cdaaa1682
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3257369430673622460
+    second: Adonis blue AoE-Sheet_0
+  - first:
+      213: -7558000713035426442
+    second: Adonis blue AoE-Sheet_1
+  - first:
+      213: 4372441106763039068
+    second: Adonis blue AoE-Sheet_2
+  - first:
+      213: 530466035731694555
+    second: Adonis blue AoE-Sheet_3
+  - first:
+      213: 7794499935689282635
+    second: Adonis blue AoE-Sheet_4
+  - first:
+      213: 7807394453536806059
+    second: Adonis blue AoE-Sheet_5
+  - first:
+      213: 8550673926631381120
+    second: Adonis blue AoE-Sheet_6
+  - first:
+      213: -3140137497968999732
+    second: Adonis blue AoE-Sheet_7
+  - first:
+      213: -6396029149146422323
+    second: Adonis blue AoE-Sheet_8
+  - first:
+      213: -4844776706493685986
+    second: Adonis blue AoE-Sheet_9
+  - first:
+      213: 4461074266054818721
+    second: Adonis blue AoE-Sheet_10
+  - first:
+      213: -1972818413235043666
+    second: Adonis blue AoE-Sheet_11
+  - first:
+      213: 3979582337931563853
+    second: Adonis blue AoE-Sheet_12
+  - first:
+      213: -8617896105641757858
+    second: Adonis blue AoE-Sheet_13
+  - first:
+      213: 4874744522967776982
+    second: Adonis blue AoE-Sheet_14
+  - first:
+      213: 7845242596883213494
+    second: Adonis blue AoE-Sheet_15
+  - first:
+      213: 5317638690272316148
+    second: Adonis blue AoE-Sheet_16
+  - first:
+      213: -1546653559982462369
+    second: Adonis blue AoE-Sheet_17
+  - first:
+      213: 5786761753232012726
+    second: Adonis blue AoE-Sheet_18
+  - first:
+      213: -22778886472218459
+    second: Adonis blue AoE-Sheet_19
+  - first:
+      213: 8297728946037650894
+    second: Adonis blue AoE-Sheet_20
+  - first:
+      213: 8097128136356570191
+    second: Adonis blue AoE-Sheet_21
+  - first:
+      213: 6353083166430902901
+    second: Adonis blue AoE-Sheet_22
+  - first:
+      213: 4805058862791723651
+    second: Adonis blue AoE-Sheet_23
+  - first:
+      213: -4703556079182547601
+    second: Adonis blue AoE-Sheet_24
+  - first:
+      213: -3677974366410630183
+    second: Adonis blue AoE-Sheet_25
+  - first:
+      213: 2857322886083461094
+    second: Adonis blue AoE-Sheet_26
+  - first:
+      213: -2575207148857916276
+    second: Adonis blue AoE-Sheet_27
+  - first:
+      213: -891282290057884569
+    second: Adonis blue AoE-Sheet_28
+  - first:
+      213: 8832160153120630997
+    second: Adonis blue AoE-Sheet_29
+  - first:
+      213: -6527983973351956338
+    second: Adonis blue AoE-Sheet_30
+  - first:
+      213: 3529822682663167242
+    second: Adonis blue AoE-Sheet_31
+  - first:
+      213: 3949183922512759062
+    second: Adonis blue AoE-Sheet_32
+  - first:
+      213: -8195034367724919988
+    second: Adonis blue AoE-Sheet_33
+  - first:
+      213: 4437042161267350356
+    second: Adonis blue AoE-Sheet_34
+  - first:
+      213: -1329649489905281828
+    second: Adonis blue AoE-Sheet_35
+  - first:
+      213: 5704590665782353916
+    second: Adonis blue AoE-Sheet_36
+  - first:
+      213: 3152248214481749513
+    second: Adonis blue AoE-Sheet_37
+  - first:
+      213: 8720824722181804112
+    second: Adonis blue AoE-Sheet_38
+  - first:
+      213: 371314958657182312
+    second: Adonis blue AoE-Sheet_39
+  - first:
+      213: -6864413175944009121
+    second: Adonis blue AoE-Sheet_40
+  - first:
+      213: 6765829933418728523
+    second: Adonis blue AoE-Sheet_41
+  - first:
+      213: 7477622035216515255
+    second: Adonis blue AoE-Sheet_42
+  - first:
+      213: -9070755745204997850
+    second: Adonis blue AoE-Sheet_43
+  - first:
+      213: -4334117266286927422
+    second: Adonis blue AoE-Sheet_44
+  - first:
+      213: -3769740824302547712
+    second: Adonis blue AoE-Sheet_45
+  - first:
+      213: -7594537697233557319
+    second: Adonis blue AoE-Sheet_46
+  - first:
+      213: 7286017853224009987
+    second: Adonis blue AoE-Sheet_47
+  - first:
+      213: -3772940408447988306
+    second: Adonis blue AoE-Sheet_48
+  - first:
+      213: 3075185086549904991
+    second: Adonis blue AoE-Sheet_49
+  - first:
+      213: 8209252865187179446
+    second: Adonis blue AoE-Sheet_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Adonis blue AoE-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb584892d30843d20800000000000000
+      internalID: 3257369430673622460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Adonis blue AoE-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675df5f35669c1790800000000000000
+      internalID: -7558000713035426442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Adonis blue AoE-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c514de935080eac30800000000000000
+      internalID: 4372441106763039068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Adonis blue AoE-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd382398c089c5700800000000000000
+      internalID: 530466035731694555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Adonis blue AoE-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44909cf460ab2c60800000000000000
+      internalID: 7794499935689282635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Adonis blue AoE-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba49a60e3ef695c60800000000000000
+      internalID: 7807394453536806059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Adonis blue AoE-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088de0302a81aa670800000000000000
+      internalID: 8550673926631381120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Adonis blue AoE-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc28caf259dfb64d0800000000000000
+      internalID: -3140137497968999732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3e9b34349e58a1c449fa930f04f5f93f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Adonis blue AoE-Sheet_0: 3257369430673622460
+      Adonis blue AoE-Sheet_1: -7558000713035426442
+      Adonis blue AoE-Sheet_2: 4372441106763039068
+      Adonis blue AoE-Sheet_3: 530466035731694555
+      Adonis blue AoE-Sheet_4: 7794499935689282635
+      Adonis blue AoE-Sheet_5: 7807394453536806059
+      Adonis blue AoE-Sheet_6: 8550673926631381120
+      Adonis blue AoE-Sheet_7: -3140137497968999732
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

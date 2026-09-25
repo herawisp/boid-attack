@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,7 +23,6 @@ public class ButterflyService: MonoBehaviour {
         }
     }
 
-
     //================================================================================================//
     //================================================================================================//
 
@@ -37,9 +35,14 @@ public class ButterflyService: MonoBehaviour {
         [TeamType.Enemy] = new()
     };
 
-    [Header("Unity Events")]
-    public UnityEvent ButterflyAdded;
-    public UnityEvent ButterflyRemoved;
+    //================================================================================================//
+    //================================================================================================//
+    
+    public event System.Action<Butterfly> ButterflyDied;
+    public event System.Action<Butterfly> ButterflyHealed;
+
+    public void RaiseButterflyDied(Butterfly b) => ButterflyDied?.Invoke(b);
+    public void RaiseButterflyHealed(Butterfly b) => ButterflyHealed?.Invoke(b);
 
     //================================================================================================//
     //================================================================================================//
@@ -51,13 +54,11 @@ public class ButterflyService: MonoBehaviour {
 
         SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
         TeamsButterflies[teamType].Add(butterfly);
-        ButterflyAdded.Invoke();
     }
 
     public void RemoveButterfly(Butterfly member, TeamType teamType) {
         Destroy(member.gameObject);
         TeamsButterflies[teamType].Remove(member);
-        ButterflyRemoved.Invoke();
     }
 
     public void SetButterflies(List<ButterflyType> butterflyTypes, TeamType teamType) {
@@ -69,7 +70,6 @@ public class ButterflyService: MonoBehaviour {
             SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
             TeamsButterflies[teamType].Add(butterfly);
         }
-        ButterflyAdded.Invoke();
     }
 
     public void ClearButterflies(TeamType teamType) {
@@ -77,7 +77,6 @@ public class ButterflyService: MonoBehaviour {
             Destroy(butterfly.gameObject);
         }
         TeamsButterflies[teamType].Clear();
-        ButterflyRemoved.Invoke();
     }
 
     public void EnableAllButterfly() {

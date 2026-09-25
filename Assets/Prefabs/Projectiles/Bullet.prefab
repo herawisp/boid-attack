@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2564863301160044483}
   - component: {fileID: 1876514656318090176}
   - component: {fileID: 1362175661737368466}
+  - component: {fileID: 2782047582881639994}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -92,7 +93,7 @@ SpriteRenderer:
   m_Size: {x: 0.08, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!50 &2564863301160044483
 Rigidbody2D:
@@ -133,6 +134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e68c047be5b5324180dd649e8664e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
+  AttackDamage: 0
+  TeamType: 0
+  Empowered: 0
 --- !u!61 &1362175661737368466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,7 +171,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -177,5 +181,27 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.16}
+  m_Size: {x: 0.3, y: 0.6}
   m_EdgeRadius: 0
+--- !u!95 &2782047582881639994
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567861940483196999}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 93ccdbe434c1b6b44aea023436eca562, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
