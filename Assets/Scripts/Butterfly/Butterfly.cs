@@ -20,6 +20,7 @@ public class Butterfly : MonoBehaviour {
     public bool Enabled = false;
     public bool IsSpawned;
     public bool HasAttachedAura;
+    public bool IsEquipped = true; 
 
     public float CooldownMultiplier = 1f;
     public float AttackMultiplier = 1f;

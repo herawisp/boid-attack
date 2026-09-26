@@ -19,3 +19,8 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 3a808be56ca7347438c3cb8611d57dd3, type: 2}
+  DisplayName: Black Hairstreak
+  Description: 'Sweet Pollen:  Creates an AOE in the arena. Allies that enter the
+    area, will have its attack doubled and cooldown halved. The area lasts for 15
+    seconds. '
+  Sprite: {fileID: -1926705212766516877, guid: 5e79b376dd00f674cb9f8c24d57e9637, type: 3}

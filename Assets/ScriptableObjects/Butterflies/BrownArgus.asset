@@ -21,3 +21,7 @@ MonoBehaviour:
     Ability: {fileID: 11400000, guid: 80e3327ffb8df0645a690f96f5a0a9d6, type: 2}
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}
+  DisplayName: Brown Argus
+  Description: 'Martyr Fires 1 Projectile. When dies, halves every ally butterflies
+    cooldown for 5 second '
+  Sprite: {fileID: 8031907453610451872, guid: 12df6ca933a22af478e2e1caf9d5d91f, type: 3}

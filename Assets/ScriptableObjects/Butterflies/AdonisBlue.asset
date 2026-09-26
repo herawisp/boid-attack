@@ -19,4 +19,7 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 3e11b6b6309d62f4bb7a61bb1dd3a6d6, type: 2}
+  DisplayName: Adonis Blue
+  Description: 'Explosives: Launch Explosives which creates a medium area that deals
+    30 damage '
   Sprite: {fileID: -3243505085284577073, guid: 0686bd0c933c83a4d9846864477dd125, type: 3}

@@ -213,7 +213,6 @@ public class FloorService : MonoBehaviour {
     }
     
     void GameOver() {
-        // simplest version — restart the run entirely
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameOverUI.Instance.Show(DungeonData.FloorNumber);
     }
 }

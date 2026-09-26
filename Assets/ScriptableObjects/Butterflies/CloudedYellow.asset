@@ -21,3 +21,7 @@ MonoBehaviour:
     Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}
   - Trigger: 2
     Ability: {fileID: 11400000, guid: 0db415fbdb6500b428903b575b698ef1, type: 2}
+  DisplayName: Clouded Yellow
+  Description: 'Avenger  Fires 1 Projectile When an ally dies: Fires 1 projectile
+    with double damage '
+  Sprite: {fileID: 177932190014441936, guid: d48c091716a433f4691b87ebbe86ec83, type: 3}

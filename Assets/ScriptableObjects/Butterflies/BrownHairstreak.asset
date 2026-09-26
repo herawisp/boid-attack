@@ -19,3 +19,7 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 8d5f01a9beb8f5d479b797e3e3a1038d, type: 2}
+  DisplayName: Brown Hairstreak
+  Description: 'Healing Zone  Creates an AOE in the arena. Allies that enter the
+    area, will heal 1 HP every second. The area lasts for 15 seconds. '
+  Sprite: {fileID: 9100276458926957935, guid: d893c28ecabe1a34a9b04167fa0be64f, type: 3}

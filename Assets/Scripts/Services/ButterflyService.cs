@@ -92,7 +92,7 @@ public class ButterflyService: MonoBehaviour {
     public void EnableAllButterfly() {
         foreach (List<Butterfly> butterflies in TeamsButterflies.Values) {
             foreach (Butterfly butterfly in butterflies) {
-                butterfly.Enable();
+                if (butterfly.IsEquipped) butterfly.Enable();
             }
         }
     }
@@ -115,6 +115,14 @@ public class ButterflyService: MonoBehaviour {
         }
         return count;
     }
+
+    public int CountEquipped(TeamType team) {
+        int count = 0;
+        foreach (Butterfly b in TeamsButterflies[team]) if (b.IsEquipped) count++;
+        return count;
+    }
+
+    public int MaxEquippedTeamSize = 6;
 
     public List<Butterfly> GetButterflies(TeamType teamType) {
         return TeamsButterflies[teamType].FindAll(b => b.gameObject.activeInHierarchy);

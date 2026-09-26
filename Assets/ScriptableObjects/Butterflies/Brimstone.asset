@@ -21,3 +21,7 @@ MonoBehaviour:
     Ability: {fileID: 11400000, guid: a8ca864a672f7cd49b23adafa52b95ea, type: 2}
   - Trigger: 0
     Ability: {fileID: 11400000, guid: cc6a154eecd72a748ae5d703f4360182, type: 2}
+  DisplayName: Brimstone
+  Description: 'Homing shot Fires 1 homing projectile. Division On Died: If Health
+    >= 25, Creates 2 Brimstone with half health and half attack '
+  Sprite: {fileID: -143061616075304068, guid: e283e79d42262814b912e10cc794432a, type: 3}

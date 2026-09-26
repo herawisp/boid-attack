@@ -19,3 +19,7 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 013b556863ef1ab4a9a6b53eb0f10930, type: 2}
+  DisplayName: Red Admiral
+  Description: 'Empowered Shot Fires 1 projectile. Its damage is equal to double
+    the amount of butterfly is currently in the arena '
+  Sprite: {fileID: 4470633392263640553, guid: 814e8f03d7c39af4c9a19f6ebea0a262, type: 3}

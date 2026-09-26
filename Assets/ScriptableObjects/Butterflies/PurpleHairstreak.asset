@@ -19,3 +19,6 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 32fb9ef29fbe3d34fa8bb95dda1da10c, type: 2}
+  DisplayName: Purple Hairstreak
+  Description: 'Pyromancer Nearby enemies take x damage per second '
+  Sprite: {fileID: -2706290097753833683, guid: 535eeddf46474d74e82e36c4a695cf74, type: 3}

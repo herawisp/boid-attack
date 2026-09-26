@@ -19,3 +19,7 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 341eb25678bfa334fa28b63eba0e7d6b, type: 2}
+  DisplayName: Wood White
+  Description: 'Healer Spawns 1 healing orb every cooldown. A healing orb will heal
+    a butterfly that picks it up '
+  Sprite: {fileID: 8998384008146397798, guid: 2d2c2d8013dd5044796de202cbbb912c, type: 3}

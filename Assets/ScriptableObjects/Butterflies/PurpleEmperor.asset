@@ -19,3 +19,6 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 557f6b718ecdefb468900f23c309175e, type: 2}
+  DisplayName: Purple Emperor
+  Description: 'Nuker Creates a large area that deals 50 AOE damage to all butterflies.  '
+  Sprite: {fileID: 2756193187247117625, guid: c23ba9c8aaaa78044969b627c1c2d9a8, type: 3}

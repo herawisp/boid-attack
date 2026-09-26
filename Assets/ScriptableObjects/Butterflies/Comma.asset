@@ -19,3 +19,6 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: a6973bbbd9945db40b997531fb8dd594, type: 2}
+  DisplayName: Comma
+  Description: 'Spawner Creates a Mini Comma every cooldown. '
+  Sprite: {fileID: 7949105301520237608, guid: 5534ae6bdc2e5164dbd7df7c08ff4c61, type: 3}

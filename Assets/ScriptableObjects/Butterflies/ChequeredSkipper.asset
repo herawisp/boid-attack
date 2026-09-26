@@ -21,3 +21,6 @@ MonoBehaviour:
     Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}
+  DisplayName: Chequered Skipper
+  Description: 'Healing Echo  Fires 1 projectile whenever an ally heal '
+  Sprite: {fileID: -2779249414221376561, guid: 8bd82fb01a05ff3418389edfbecd087f, type: 3}

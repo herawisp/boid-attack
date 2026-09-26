@@ -19,3 +19,6 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}
+  DisplayName: Cryptic Wood White
+  Description: 'Single Shot Fires 1 projectile to the enemy direction '
+  Sprite: {fileID: 7561862393325290564, guid: 9585f1b035c68f44caf8a50b3988a422, type: 3}

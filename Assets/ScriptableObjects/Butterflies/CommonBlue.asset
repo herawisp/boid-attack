@@ -19,3 +19,6 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: a8352e0ff8158ad48973ac73cc07839d, type: 2}
+  DisplayName: Common Blue
+  Description: 'Mage Creates a small area that deals 15 AOE damage '
+  Sprite: {fileID: 8501616556350109620, guid: 41872e0423fe2314ea7a580039ae4d29, type: 3}

@@ -19,3 +19,6 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 3e244592d178c5a4bb0effa4da35c734, type: 2}
+  DisplayName: Chalk Hill Blue
+  Description: 'Double Shot Fires 2 projectile at once to the enemy direction '
+  Sprite: {fileID: -1506985024227730375, guid: 23fe4369041a37a4689e643a5e243d36, type: 3}

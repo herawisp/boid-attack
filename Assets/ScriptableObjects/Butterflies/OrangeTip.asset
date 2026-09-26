@@ -19,3 +19,6 @@ MonoBehaviour:
   Abilities:
   - Trigger: 0
     Ability: {fileID: 11400000, guid: 57a8b43dbcdd53b40816fa4e4dbf54c2, type: 2}
+  DisplayName: Orange Tip
+  Description: 'Trifurcation Fires 3 projectile at once to 3 different direction '
+  Sprite: {fileID: -5667234750940827317, guid: b9672e8c2727a414e9ba98bd0ca0a4aa, type: 3}
