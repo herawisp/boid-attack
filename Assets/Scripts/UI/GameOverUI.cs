@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +12,7 @@ public class GameOverUI : MonoBehaviour {
     }
 
     public GameObject Panel;
-    public Text FloorReachedLabel;
+    public TextMeshProUGUI FloorReachedLabel;
     public Button RestartButton;
 
     void OnEnable() {
