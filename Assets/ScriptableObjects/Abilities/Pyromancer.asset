@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8ec0cee4aab644fb0a2fc0559ac398, type: 3}
+  m_Name: Pyromancer
+  m_EditorClassIdentifier: Assembly-CSharp::AttachedDamageAuraAbility
+  ZonePrefab: {fileID: 7846223563361314137, guid: 918b1c5e5198c2a42a0259d65f371823, type: 3}
+  DamagePerTick: 0.5
+  TickInterval: 0.1

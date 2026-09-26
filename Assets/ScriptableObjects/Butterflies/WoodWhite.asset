@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: WoodWhite
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: 9b6ac96a59f59994586159d5781f5bba, type: 2}
+  AnimatorController: {fileID: 22100000, guid: 368927a9694679942b472d8bdec381d7, type: 2}
+  Health: 100
+  AttackDamage: 0
+  Cooldown: 2
+  Abilities:
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 341eb25678bfa334fa28b63eba0e7d6b, type: 2}

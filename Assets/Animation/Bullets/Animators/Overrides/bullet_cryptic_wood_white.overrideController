@@ -8,4 +8,6 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: bullet_cryptic_wood_white
   m_Controller: {fileID: 9100000, guid: 4ee5febcc0460874e80031a59c684552, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 576c318548763c74a999a32a93d7a2b5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: da55a876a2acc934f8c4585ad43a74e4, type: 2}

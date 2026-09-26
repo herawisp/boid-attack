@@ -7,5 +7,7 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: healing_orb
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Controller: {fileID: 9100000, guid: ee910e7c2e23c444ab7b5c9782fc277d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 542b50b531958bc47abe1066031b35e8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 542b50b531958bc47abe1066031b35e8, type: 2}

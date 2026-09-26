@@ -4,13 +4,13 @@ public class Test : MonoBehaviour {
 
     void Start()
     {
-        FloorService.Instance.GenerateFloor();
-        ButterflyService.Instance.AddButterfly(ButterflyType.WoodWhite, TeamType.Player);
-        ButterflyService.Instance.AddButterfly(ButterflyType.WoodWhite, TeamType.Player);
-        ButterflyService.Instance.AddButterfly(ButterflyType.WoodWhite, TeamType.Player);
-        ButterflyService.Instance.AddButterfly(ButterflyType.WoodWhite, TeamType.Enemy);
-        ButterflyService.Instance.AddButterfly(ButterflyType.WoodWhite, TeamType.Enemy);
-        ButterflyService.Instance.AddButterfly(ButterflyType.WoodWhite, TeamType.Enemy);
+        FloorService.Instance.StartNewRun();
+        // ButterflyService.Instance.AddButterfly(ButterflyType.PurpleEmperor, TeamType.Player);
+        // ButterflyService.Instance.AddButterfly(ButterflyType.CommonBlue, TeamType.Player);
+        // ButterflyService.Instance.AddButterfly(ButterflyType.CommonBlue, TeamType.Player);
+        // ButterflyService.Instance.AddButterfly(ButterflyType.PurpleEmperor, TeamType.Enemy);
+        // ButterflyService.Instance.AddButterfly(ButterflyType.CommonBlue, TeamType.Enemy);
+        // ButterflyService.Instance.AddButterfly(ButterflyType.CommonBlue, TeamType.Enemy);
         ButterflyService.Instance.EnableAllButterfly();
     }
 }

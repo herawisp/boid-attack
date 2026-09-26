@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: BrownArgus
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: d191edfa1305c5846bae8594a46f22e2, type: 2}
+  AnimatorController: {fileID: 22100000, guid: 68408900911538f4aaf1a8f707119fae, type: 2}
+  Health: 20
+  AttackDamage: 5
+  Cooldown: 1
+  Abilities:
+  - Trigger: 1
+    Ability: {fileID: 11400000, guid: 80e3327ffb8df0645a690f96f5a0a9d6, type: 2}
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}

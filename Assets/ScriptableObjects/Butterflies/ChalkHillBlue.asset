@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: ChalkHillBlue
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  AnimatorController: {fileID: 9100000, guid: e2a64235e48031243b644b1ddf0c9157, type: 2}
+  AnimatorController: {fileID: 22100000, guid: bef25c83f15f7064db5b5bfe317f8f8e, type: 2}
   Health: 70
   AttackDamage: 8
   Cooldown: 1
   Abilities:
-  - {fileID: 11400000, guid: 013b556863ef1ab4a9a6b53eb0f10930, type: 2}
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 3e244592d178c5a4bb0effa4da35c734, type: 2}

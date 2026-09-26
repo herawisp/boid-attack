@@ -6,4 +6,5 @@ public class ButterflyData : ScriptableObject
     public RuntimeAnimatorController AnimatorController;
     public float Health, AttackDamage, Cooldown;
     public AbilityEntry[] Abilities;
+    public Sprite Sprite;
 }

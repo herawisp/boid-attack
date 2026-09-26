@@ -18,4 +18,5 @@ MonoBehaviour:
   DelayBetweenShots: 0.2
   Homing: 0
   Empowered: 1
+  AnimatorController: {fileID: 22100000, guid: 0727e0dc01727fa49a376c7791523d18, type: 2}
   BulletPrefab: {fileID: 1876514656318090176, guid: 774d6cb417e6713428e1e8ea357534ce, type: 3}

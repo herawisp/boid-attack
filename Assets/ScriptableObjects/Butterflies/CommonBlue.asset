@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: CommonBlue
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: 8f98c5260f8942e42a26b72788b562d2, type: 2}
+  AnimatorController: {fileID: 22100000, guid: 3127ff6754e2d1847a860ca760787a96, type: 2}
+  Health: 90
+  AttackDamage: 15
+  Cooldown: 2
+  Abilities:
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: a8352e0ff8158ad48973ac73cc07839d, type: 2}

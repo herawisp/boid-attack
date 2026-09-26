@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: BrownHairstreak
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: 6329f2a9697bc674eba1448924d75f89, type: 2}
+  AnimatorController: {fileID: 22100000, guid: ffc170eafc0e26d49bdce0960dd71876, type: 2}
+  Health: 120
+  AttackDamage: 0
+  Cooldown: 10
+  Abilities:
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 8d5f01a9beb8f5d479b797e3e3a1038d, type: 2}

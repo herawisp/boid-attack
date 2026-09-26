@@ -11,10 +11,11 @@ public class ProjectileAbility : AbilityData {
     public float[] AngleOffsets = { 0f };
     public int ProjectileAmount = 1;
     public float DelayBetweenShots = 0.5f;
-    public bool Homing;
+    public bool Homing = false;
     public bool Empowered;
-    public RuntimeAnimatorController AnimatorController;
+    public float DamageMultiplier = 1f;
 
+    public RuntimeAnimatorController AnimatorController;
     public Bullet BulletPrefab;
 
     //================================================================================================//
@@ -52,12 +53,13 @@ public class ProjectileAbility : AbilityData {
 
     void Spawn(Butterfly self, Vector3 direction) {
         Bullet bullet = Instantiate(BulletPrefab, self.transform.position, Quaternion.identity);
-        bullet.AttackDamage = self.ButterflyData.AttackDamage;
+        bullet.AttackDamage = self.ButterflyData.AttackDamage * DamageMultiplier;
         bullet.TeamType = self.TeamType;
+        bullet.Homing = Homing;
         bullet.Empowered = Empowered;
         bullet.SetAnimationController(AnimatorController);
         if (self.TeamType == TeamType.Enemy) bullet.SetTypeEnemy();
-        bullet.Shoot(self.transform.position, direction);
+        bullet.Shoot(self.transform.position, direction, self.Vision);
     }
 
     static Vector3 Rotate(Vector3 dir, float degrees) {

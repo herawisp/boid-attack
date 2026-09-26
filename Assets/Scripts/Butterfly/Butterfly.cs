@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -17,6 +18,15 @@ public class Butterfly : MonoBehaviour {
     public TeamType TeamType;
     public Vision Vision;
     public bool Enabled = false;
+    public bool IsSpawned;
+    public bool HasAttachedAura;
+
+    public float CooldownMultiplier = 1f;
+    public float AttackMultiplier = 1f;
+    public float? AttackOverride;
+
+    public float CurrentCooldown => ButterflyData.Cooldown * CooldownMultiplier;
+    public float CurrentAttackDamage => (AttackOverride ?? ButterflyData.AttackDamage) * AttackMultiplier;
 
     private Timer _timer;
     private Movement _movement;
@@ -45,24 +55,51 @@ public class Butterfly : MonoBehaviour {
         ButterflyService.Instance.RaiseButterflyHealed(this);
     }
 
+    public void SetBuffed(bool buffed) {
+        Debug.Log("Buffed");
+        CooldownMultiplier = buffed ? 0.5f : 1f;
+        AttackMultiplier = buffed ? 2f : 1f;
+    }
+
+    public void TakeDamage(float amount) {
+        Health -= amount;
+        if (Health > 0) return;
+
+        ButterflyService.Instance.RaiseButterflyDied(this);
+        Disable();
+    }
+
+    public void TakeDamage(Bullet bullet) {
+        float amount = bullet.Empowered
+            ? 2 * ButterflyService.Instance.CountEnabledButterfly()
+            : bullet.AttackDamage;
+
+        TakeDamage(amount);
+    }
+
+    //================================================================================================//
+    //================================================================================================//
+
+    public void ApplyCooldownMultiplier(float multiplier, float duration) {
+        StartCoroutine(CooldownMultiplierRoutine(multiplier, duration));
+    }
+
+    IEnumerator CooldownMultiplierRoutine(float multiplier, float duration) {
+        CooldownMultiplier = multiplier;
+        yield return new WaitForSeconds(duration);
+        if (this == null) yield break;
+        CooldownMultiplier = 1f;
+    }
+
     //================================================================================================//
     //================================================================================================//
 
     void OnTriggerEnter2D(Collider2D collision) {
-        Bullet bullet;
-        if (!collision.TryGetComponent(out bullet)) return;
+        if (!collision.TryGetComponent(out Bullet bullet)) return;
         if (bullet.TeamType == TeamType) return;
 
-        if (bullet.Empowered) {
-            Debug.Log(ButterflyService.Instance.CountEnabledButterfly());
-            Health -= 2 * ButterflyService.Instance.CountEnabledButterfly();
-        } else Health -= bullet.AttackDamage;
-
+        TakeDamage(bullet);
         Destroy(collision.gameObject);
-
-        if (Health > 0) return;
-        ButterflyService.Instance.RaiseButterflyDied(this);
-        Disable();
     }
 
     void Trigger(AbilityTrigger trigger) {

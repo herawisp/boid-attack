@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: PurpleEmperor
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: 019240640b197f542b81ce65a3f5fe29, type: 2}
+  AnimatorController: {fileID: 22100000, guid: a6f7a8089186f864d86bddd0bf8ccc51, type: 2}
+  Health: 70
+  AttackDamage: 50
+  Cooldown: 20
+  Abilities:
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 557f6b718ecdefb468900f23c309175e, type: 2}

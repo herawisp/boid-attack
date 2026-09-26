@@ -54,7 +54,14 @@ public class DungeonGenerator {
         _data.Cells[PopRandomEndRoom()] = RoomType.Key;
         _data.Cells[PopRandomEndRoom()] = RoomType.Exit;
 
+        for (int i = 0; i < _data.Cells.Length; i++) {
+            if (_data.Cells[i] == RoomType.Empty && i != 45)
+                _data.Cells[i] = RoomType.Battle;
+        }
+
         Trim();
+        _data.Visited = new bool[_data.Cells.Length];
+        _data.Cleared = new bool[_data.Cells.Length];
         return _data;
     }
 
@@ -92,6 +99,8 @@ public class DungeonGenerator {
         _data.Cells = trimmed;
         _data.Width = newWidth;
         _data.Height = newHeight;
+        _data.Visited = new bool[trimmed.Length];
+        _data.Cleared = new bool[trimmed.Length];
     }
 
     private int PopRandomEndRoom() {
@@ -102,10 +111,11 @@ public class DungeonGenerator {
     }
 
     private int NeighbourCount(int i) {
+        int x = i % 10;
         int up = (i + 10 < 100) && _data.Cells[i + 10] != RoomType.None ? 1 : 0;
         int down = (i - 10 >= 0) && _data.Cells[i - 10] != RoomType.None ? 1 : 0;
-        int right = (i - 1 >= 0) && _data.Cells[i - 1] != RoomType.None ? 1 : 0;
-        int left = (i + 1 < 100) && _data.Cells[i + 1] != RoomType.None ? 1 : 0;
+        int right = (x < 9) && _data.Cells[i + 1] != RoomType.None ? 1 : 0;
+        int left = (x > 0) && _data.Cells[i - 1] != RoomType.None ? 1 : 0;
         return up + down + right + left;
     }
 

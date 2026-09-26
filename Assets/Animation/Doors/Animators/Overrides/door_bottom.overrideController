@@ -9,7 +9,7 @@ AnimatorOverrideController:
   m_Name: door_bottom
   m_Controller: {fileID: 9100000, guid: 5fe0995e0e4b06343b5007b09ca1aa8d, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: cee750404821d84409f0ecc9c7a939fe, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: bb517c8ae576a5347b19002000a113e3, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: b30eea0260269124caa359cea2be30ed, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 43a6be9b6eafb1f4ab97541ba2ecb223, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e19d5b479e2a8fc47987146d1f1b52d6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e19d5b479e2a8fc47987146d1f1b52d6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 605b94cce55dd2447bfaf1fb01e3889b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 605b94cce55dd2447bfaf1fb01e3889b, type: 2}

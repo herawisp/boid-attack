@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: AdonisBlue
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  AnimatorController: {fileID: 9100000, guid: ac43fbe098755024386c17fbaa7bc1e4, type: 2}
-  Prefab: {fileID: -3371507109695851518, guid: 6020f96a640d6734ca7efc42510680e7, type: 3}
-  Health: 100
-  AttackDamage: 10
-  Cooldown: 1
+  AnimatorController: {fileID: 22100000, guid: 9f03b4f23c23c4c4b828428ba79e676b, type: 2}
+  Health: 80
+  AttackDamage: 30
+  Cooldown: 5
   Abilities:
-  - {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 3e11b6b6309d62f4bb7a61bb1dd3a6d6, type: 2}
+  Sprite: {fileID: -3243505085284577073, guid: 0686bd0c933c83a4d9846864477dd125, type: 3}

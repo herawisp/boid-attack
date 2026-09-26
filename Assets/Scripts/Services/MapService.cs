@@ -43,7 +43,13 @@ public class MapService : MonoBehaviour {
             Sprite sprite;
             if (i == dungeonData.CurrentCell) {
                 sprite = RoomSprites[6];
-            } else sprite = RoomSprites[(int) dungeonData.Cells[i]];
+            } else if (dungeonData.Visited[i]) {
+                sprite = RoomSprites[(int) dungeonData.Cells[i]];
+            } else if (IsAdjacentToVisited(dungeonData, i)) {
+                sprite = null;//RoomSprites[7];
+            } else {
+                sprite = null;
+            }
 
             Image dungeonRoomImage = Instantiate(DungeonRoomImage, _roomCells);
             dungeonRoomImage.sprite = sprite;
@@ -51,6 +57,14 @@ public class MapService : MonoBehaviour {
 
             if (sprite == null) dungeonRoomImage.color = new(1,1,1,0);
         }
+    }
+
+    bool IsAdjacentToVisited(DungeonData d, int i) {
+        int width = d.Width, x = i % width;
+        return (i >= width && d.Visited[i - width]) ||
+            (i < d.Cells.Length - width && d.Visited[i + width]) ||
+            (x > 0 && d.Visited[i - 1]) ||
+            (x < width - 1 && d.Visited[i + 1]);
     }
 
     void OnOpenMap() {

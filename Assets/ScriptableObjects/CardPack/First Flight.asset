@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3615f0b6f2a9a4d4591367ddeeba1801, type: 3}
+  m_Name: First Flight
+  m_EditorClassIdentifier: Assembly-CSharp::CardPackData
+  PackName: First Flight
+  Price: 0
+  Icon: {fileID: 9047087352337577491, guid: ef18ca143bc9d2a48aa1adfb270f55b7, type: 3}
+  PossibleButterflies: 0b000000050000000c0000000f000000

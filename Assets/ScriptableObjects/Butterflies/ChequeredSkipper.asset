@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: ChequeredSkipper
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: bb30d444c861db94baf3bb9f47da5c4e, type: 2}
+  AnimatorController: {fileID: 22100000, guid: 995dbe303a8714b4690c16cee63f053f, type: 2}
+  Health: 50
+  AttackDamage: 5
+  Cooldown: 1
+  Abilities:
+  - Trigger: 3
+    Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}

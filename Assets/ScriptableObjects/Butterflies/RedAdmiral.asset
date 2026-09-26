@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: RedAdmiral
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  AnimatorController: {fileID: 9100000, guid: c09393d5c70c58b4294da1060f4c2eab, type: 2}
+  AnimatorController: {fileID: 22100000, guid: b6feab928867f5b4d912130ee3e42658, type: 2}
   Health: 80
   AttackDamage: 0
   Cooldown: 3
   Abilities:
-  - {fileID: 11400000, guid: 013b556863ef1ab4a9a6b53eb0f10930, type: 2}
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 013b556863ef1ab4a9a6b53eb0f10930, type: 2}

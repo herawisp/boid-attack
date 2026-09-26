@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e3382a4b4229c42928269b5afadcad, type: 3}
   m_Name: Healer
   m_EditorClassIdentifier: Assembly-CSharp::SpawnHealingOrbAbility
-  OrbPrefab: {fileID: 0}
+  OrbPrefab: {fileID: 2021545941349276975, guid: 47eee904121b4db4288cf2b41e5c5306, type: 3}
   HealAmount: 10

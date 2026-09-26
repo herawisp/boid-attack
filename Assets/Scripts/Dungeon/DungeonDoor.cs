@@ -7,9 +7,7 @@ public class DungeonDoor : MonoBehaviour {
     //================================================================================================//
 
     [Header("Wall Sprites")]
-    public Image Wall;
-    public Sprite OpenWallSprite;
-    public Sprite ClosedWallSprite;
+    public DungeonWall Wall;
     public GameObject Arrow;
 
     Image _image;
@@ -21,41 +19,15 @@ public class DungeonDoor : MonoBehaviour {
     }
 
     public void Enable(bool isEnabled) {
-        Wall.sprite = isEnabled ? OpenWallSprite : ClosedWallSprite;
+        Wall.SetOpen(isEnabled);
         _image.enabled = isEnabled;
-
-        if (isEnabled) {
-            SetAnimationOpen();
-            Arrow.SetActive(false);
-        } else {
-            Arrow.SetActive(false);
-        }
+        Arrow.SetActive(false);
+        _animator.SetBool("IsOpen", isEnabled);
     }
     
     public void OnOpenedFinished() {
+        _animator.SetBool("IsOpen", false);
         Arrow.SetActive(true);
-        SetAnimationIdle();
-    }
-
-    //================================================================================================//
-    //================================================================================================//
-    
-    void SetAnimationIdle() {
-        _animator.SetBool("IsOpened", false);
-        _animator.SetBool("IsClosed", false);
-        _animator.SetBool("IsIdle", true);
-    }
-
-    void SetAnimationClose() {
-        _animator.SetBool("IsOpened", false);
-        _animator.SetBool("IsIdle", false);
-        _animator.SetBool("IsClosed", true);
-    }
-
-    void SetAnimationOpen() {
-        _animator.SetBool("IsClosed", false);
-        _animator.SetBool("IsIdle", false);
-        _animator.SetBool("IsOpened", true);
     }
 
     //================================================================================================//

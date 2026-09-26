@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc7222fb9424944e86d28c15f933565, type: 3}
+  m_Name: Homing
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileAbility
+  AngleOffsets:
+  - 0
+  ProjectileAmount: 1
+  DelayBetweenShots: 0.1
+  Homing: 1
+  Empowered: 0
+  DamageMultiplier: 1
+  AnimatorController: {fileID: 22100000, guid: eec647df2668c504fbef7251dc268928, type: 2}
+  BulletPrefab: {fileID: 1876514656318090176, guid: 774d6cb417e6713428e1e8ea357534ce, type: 3}

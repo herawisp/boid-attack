@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a5623e34813b345b356f9c9062a0eb, type: 3}
   m_Name: CloudedYellow
   m_EditorClassIdentifier: Assembly-CSharp::ButterflyData
-  animatorController: {fileID: 9100000, guid: acf2ba16385bed94f91ce1bbbe8059a2, type: 2}
+  AnimatorController: {fileID: 22100000, guid: db3d4b933fa1e9d44b1539d16182c785, type: 2}
+  Health: 80
+  AttackDamage: 7
+  Cooldown: 2
+  Abilities:
+  - Trigger: 0
+    Ability: {fileID: 11400000, guid: 7bb484955c297874eba8bb2ace0b29de, type: 2}
+  - Trigger: 2
+    Ability: {fileID: 11400000, guid: 0db415fbdb6500b428903b575b698ef1, type: 2}

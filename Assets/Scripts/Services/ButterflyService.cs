@@ -6,8 +6,8 @@ public enum TeamType {Player, Enemy}
 
 public enum ButterflyType {
     AdonisBlue, BlackHairstreak, Brimstone, BrownArgus,
-    BronHairstreak, ChalkHillBlue, ChequeredSkipper, CloudedYellow,
-    Comma, CommonBlue, CrypticWoodWhite, OrangeTip,
+    BrownHairstreak, ChalkHillBlue, ChequeredSkipper, CloudedYellow,
+    Comma, MiniComma, CommonBlue, CrypticWoodWhite, OrangeTip,
     PurpleEmperor, PurpleHairstreak, RedAdmiral, WoodWhite
 }
 
@@ -37,7 +37,7 @@ public class ButterflyService: MonoBehaviour {
 
     //================================================================================================//
     //================================================================================================//
-    
+
     public event System.Action<Butterfly> ButterflyDied;
     public event System.Action<Butterfly> ButterflyHealed;
 
@@ -62,6 +62,7 @@ public class ButterflyService: MonoBehaviour {
     }
 
     public void SetButterflies(List<ButterflyType> butterflyTypes, TeamType teamType) {
+        ClearButterflies(teamType);
         foreach (ButterflyType butterflyType in butterflyTypes) {
             Butterfly butterfly = InstantiateButterfly(butterflyType, teamType);
             butterfly.TeamType = teamType;
@@ -69,6 +70,15 @@ public class ButterflyService: MonoBehaviour {
 
             SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
             TeamsButterflies[teamType].Add(butterfly);
+        }
+    }
+
+    public void ClearSpawnedButterflies(TeamType teamType) {
+        List<Butterfly> toRemove = TeamsButterflies[teamType].FindAll(b => b.IsSpawned);
+        foreach (Butterfly b in toRemove) {
+            SteeringBehaviours.Remove(b.GetComponent<SteeringBehaviour>());
+            Destroy(b.gameObject);
+            TeamsButterflies[teamType].Remove(b);
         }
     }
 
@@ -87,6 +97,15 @@ public class ButterflyService: MonoBehaviour {
         }
     }
 
+    // ButterflyService.cs
+    public void DisableAllButterfly() {
+        foreach (List<Butterfly> butterflies in TeamsButterflies.Values) {
+            foreach (Butterfly butterfly in butterflies) {
+                butterfly.Disable();
+            }
+        }
+    }
+
     public int CountEnabledButterfly() {
         int count = 0;
         foreach (List<Butterfly> butterflies in TeamsButterflies.Values) {
@@ -96,7 +115,39 @@ public class ButterflyService: MonoBehaviour {
         }
         return count;
     }
+
+    public List<Butterfly> GetButterflies(TeamType teamType) {
+        return TeamsButterflies[teamType].FindAll(b => b.gameObject.activeInHierarchy);
+    }
     
+    public Butterfly SpawnButterfly(
+        ButterflyType butterflyType, 
+        TeamType teamType, 
+        Vector3 position, 
+        float scale = 1f, 
+        float? healthOverride = null, 
+        float? attackOverride = null
+    ) {
+        Butterfly butterfly = InstantiateButterfly(butterflyType, teamType);
+        butterfly.transform.position = position;
+        butterfly.transform.localScale *= scale;
+        butterfly.TeamType = teamType;
+        butterfly.IsSpawned = true;
+        butterfly.Enable();
+
+        if (healthOverride.HasValue) {
+            butterfly.MaxHealth = healthOverride.Value;
+            butterfly.Health = healthOverride.Value;
+        }
+        if (attackOverride.HasValue) {
+            butterfly.AttackOverride = attackOverride.Value;
+        }
+
+        SteeringBehaviours.Add(butterfly.GetComponent<SteeringBehaviour>());
+        TeamsButterflies[teamType].Add(butterfly);
+
+        return butterfly;
+    }
     //================================================================================================//
     //================================================================================================//
 
